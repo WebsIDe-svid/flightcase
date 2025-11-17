@@ -1,4 +1,4 @@
-.nav-bar {
+nav {
     display: flex;
     flex-direction: row;
     height: 8.5vh;
@@ -14,7 +14,7 @@
     z-index: 2;
 }
 
-.nav-button {
+nav a {
     display: flex;
     height: 100%;
 
@@ -30,13 +30,13 @@
     text-decoration: none;
 }
 
-.nav-current-page {
+nav .current-page {
     letter-spacing: 2px;
     text-decoration-line: underline;
 }
 
-#contact-button {
-    background-color: #0368b5;
+nav #contact-button {
+    background-color: var(--blue);
     color: white;
     font-weight: bold;
     text-decoration-line: none;
@@ -44,7 +44,7 @@
     border-radius: 5vh;
 }
 
-#logo {
+nav #top-logo {
     height: 100%;
     margin: 0 auto 0 0;
 
