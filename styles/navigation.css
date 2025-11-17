@@ -44,9 +44,13 @@ nav #contact-button {
     border-radius: 5vh;
 }
 
-nav #top-logo {
+nav #top-logo-link {
     height: 100%;
     margin: 0 auto 0 0;
 
     justify-self: start;
+}
+
+nav #top-logo-link #flightcase-logo-img {
+    height: 100%;
 }
