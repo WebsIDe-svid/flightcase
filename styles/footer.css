@@ -42,7 +42,7 @@ footer #footer-logo #tu-delft-logo {
     max-height: 80%;
 }
 
-footer #title {
+footer #footer-title {
     grid-area: title;
 
     color: white;
@@ -57,7 +57,7 @@ footer #address {
     font-size: 20px;
 }
 
-footer #link {
+footer #footer-link {
     grid-area: link;
 
     color: var(--pink);
