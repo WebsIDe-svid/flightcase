@@ -1,0 +1,115 @@
+#about-us-banner {
+    position: relative;
+    width: 100%;
+}
+
+#about-us-banner img {
+    width: 100%;
+    aspect-ratio: 10/4;
+    object-fit: cover;
+}
+
+#about-us-banner h1 {
+    position: absolute;
+    font-size: 50px;
+    font-weight: 500;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    color: var(--gray);
+    padding: 2% 15% 2% 15%;
+}
+
+#committee {
+    box-sizing: border-box;
+    padding: 2% 10% 5% 10%;
+}
+
+#committee h2 {
+    font-weight: 500;
+    padding-bottom: .5em;
+}
+
+#committee #members {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 2%;
+}
+
+#committee #members .member {
+    display: flex;
+    flex-direction: column;
+    width: max(23%, 25vh);
+}
+
+#committee #members .member img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+#committee #members .member h3 {
+    padding-top: 1em;
+    letter-spacing: 1px;
+    font-size: 25px;
+}
+
+#committee #members .member p {
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+#committee #members .member .role {
+    color: var(--light-gray);
+    padding-bottom: 1em;
+    letter-spacing: 1px;
+}
+
+#professors {
+    display: grid;
+    grid-template-areas:
+        "title title"
+        "prof1 prof2";
+
+    box-sizing: border-box;
+    padding: 2% 10% 5% 10%;
+
+    grid-template-columns: 48% 48%;
+    column-gap: 4%;
+}
+
+#professors h2 {
+    grid-area: title;
+    padding-bottom: 1em;
+}
+
+#professors .professor {
+    display: flex;
+    flex-direction: column;
+}
+
+#professors .professor img {
+    width: 100%;
+    max-height: 50vh;
+    object-fit: cover;
+}
+
+#professors .professor h3 {
+    padding: 1em 0 1em 0;
+    font-size: 25px;
+}
+
+#professors .professor p {
+    font-size: 17px;
+}
+
+#professors #prof1 {
+    grid-area: prof1;
+}
+
+#professors #prof2 {
+    grid-area: prof2;
+}
