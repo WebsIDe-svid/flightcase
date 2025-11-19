@@ -130,7 +130,6 @@
 }
 
 #what-we-offer .card {
-    position: relative;
     background-color: var(--white);
     border-radius: 15px;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
@@ -170,4 +169,79 @@
 
 #what-we-offer #benefits {
     grid-area: benefits;
+}
+
+#our-experience {
+    display: grid;
+    grid-template-areas:
+        "title title"
+        "collaborations collaborations"
+        "destinations example";
+
+    background-color: var(--dark-white);
+    box-sizing: border-box;
+    padding: 5% 10% 5% 10%;
+    gap: 1%;
+}
+
+#our-experience h2 {
+    grid-area: title;
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin-bottom: 0.5em;
+}
+
+#our-experience .card {
+    background-color: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    padding: 5%;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+}
+
+#our-experience #collaborations {
+    grid-area: collaborations;
+}
+
+#our-experience #destinations {
+    grid-area: destinations;
+}
+
+#our-experience #example {
+    grid-area: example;
+}
+
+#our-experience #example img, #our-experience #destinations img {
+    aspect-ratio: 2/1;
+}
+
+#our-experience .card h3 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#our-experience .card p {
+    font-size: 20px;
+    color: var(--light-gray)
+}
+
+#our-experience .card img {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+#our-experience .card a {
+    width: 100%;
+    background-color: var(--pink);
+    color: var(--white);
+    text-decoration: none;
+    text-align: center;
+    border-radius: 100px;
+    padding: 1em 0 1em 0;
+    font-weight: bold;
+    font-size: 20px;
 }
