@@ -77,7 +77,7 @@
     box-sizing: border-box;
     padding: 2% 10% 5% 10%;
 
-    grid-template-columns: 48% 48%;
+    grid-template-columns: 1fr 1fr;
     column-gap: 4%;
 }
 

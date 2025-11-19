@@ -1,0 +1,47 @@
+#banner {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+    object-position: 0 -200px;
+}
+
+#information {
+    box-sizing: border-box;
+    padding: 2% 10% 5% 10%;
+
+    display: flex;
+    flex-direction: row;
+    column-gap: 10%;
+}
+
+#information #contact-text {
+    width: 40%;
+}
+
+#information #contact-text h2 {
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: .5em;
+    letter-spacing: 2px;
+}
+
+#information #contact-text p {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+#information #contact-email {
+
+}
+
+#information #contact-email h3 {
+    padding-top: 3em;
+    font-size: 25px;
+}
+
+#information #contact-email a {
+    text-decoration: underline;
+    color: var(--pink);
+    font-size: 25px;
+    letter-spacing: 1px;
+}
