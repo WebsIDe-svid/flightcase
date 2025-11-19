@@ -117,15 +117,16 @@
         "benefits benefits benefits";
     background-color: var(--dark-white);
     column-gap: 1%;
-    row-gap: 5%;
     box-sizing: border-box;
     padding: 5% 10% 5% 10%;
 }
 
-#what-we-offer #what-we-offer-title {
+#what-we-offer h2 {
     grid-area: title;
     font-size: 40px;
     letter-spacing: 2px;
+    font-weight: 500;
+    margin-bottom: 1em;
 }
 
 #what-we-offer .card {
@@ -165,4 +166,8 @@
 #what-we-offer .card p {
     font-size: 20px;
     color: var(--light-gray)
+}
+
+#what-we-offer #benefits {
+    grid-area: benefits;
 }

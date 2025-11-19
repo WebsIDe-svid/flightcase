@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/navigation.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/collapsible-text.css">
     <link rel="stylesheet" href="styles/overview.css">
 </head>
 <script src="scripts/overview-video.js"></script>
+<script src="scripts/collapsible-text.js"></script>
 <body>
 <!--Top Navigation-->
     <nav>
@@ -65,7 +67,7 @@
     </section>
 
     <section id="what-we-offer">
-        <h2 id="what-we-offer-title">What we offer</h2>
+        <h2>What we offer</h2>
         <div class="card" id="card1">
             <img src="assets/card-lightbulb.webp" alt="lightbulb" class="card-image">
             <h3>Solutions that spark innovation</h3>
@@ -103,6 +105,43 @@
                 Innovation Model among many other processes that can benefit your company. These theories have
                 proven their value over time, resulting in trustworthy tools that create impactful solutions.
             </p>
+        </div>
+
+        <div class="container" id="benefits">
+            <h2>Other benefits</h2>
+            <div class="top-line"></div>
+            <div class="collapsible" onclick="toggleChild.call(this)">
+                <h4>Cost-effective</h4>
+                <p class="expander">+</p>
+                <p>
+                    Compared to large and expensive design agencies, Flight Case is a low-investment and a
+                    low-risk alternative whose deliveries are grounded in the same methods. Even though we
+                    might have less experience, we compensate it by holding fewer prejudices against the
+                    business world and, thus, coming up with more out-of-the-box ideas.
+                </p>
+            </div>
+
+            <div class="collapsible" onclick="toggleChild.call(this)">
+                <h4>Try our designer's mindset</h4>
+                <p class="expander">+</p>
+                <p>
+                    People are often fond of the way designers analyze and solve problems, which makes us be a
+                    great asset for innovation. Creativity is a virtue that has just gained traction and leading
+                    companies around the world are starting to hire designers and use their mindset to solve
+                    their business problems with unconventional and imaginative ideas.
+                </p>
+            </div>
+
+            <div class="collapsible" onclick="toggleChild.call(this)">
+                <h4>Go international</h4>
+                <p class="expander">+</p>
+                <p>
+                    Our group consists of young designers from all over the world. We believe that diversity
+                    enriches the insights in a project and creates a future-proof concept in this globalized
+                    and intertwined economy. Moreover, it is an enormous opportunity to work with people with
+                    different backgrounds and to get to know foreign cultures.
+                </p>
+            </div>
         </div>
     </section>
 
