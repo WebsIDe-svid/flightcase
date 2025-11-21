@@ -201,19 +201,19 @@
     opacity: 1;
 }
 
-#packages #card1 {
+#packages #offer-card1 {
     grid-area: card1;
 }
 
-#packages #card2 {
+#packages #offer-card2 {
     grid-area: card2;
 }
 
-#packages #card3 {
+#packages #offer-card3 {
     grid-area: card3;
 }
 
-#packages #card4 {
+#packages #offer-card4 {
     grid-area: card4;
 }
 

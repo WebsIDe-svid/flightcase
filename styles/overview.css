@@ -146,15 +146,15 @@
     object-fit: contain;
 }
 
-#what-we-offer #card1 {
+#what-we-offer #offer-card1 {
     grid-area: card1;
 }
 
-#what-we-offer #card2 {
+#what-we-offer #offer-card2 {
     grid-area: card2;
 }
 
-#what-we-offer #card3 {
+#what-we-offer #offer-card3 {
     grid-area: card3;
 }
 
