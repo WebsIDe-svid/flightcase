@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/navigation.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/collapsible-text.css">
+    <link rel="stylesheet" href="styles/apply.css">
 </head>
+<script src="scripts/collapsible-text.js"></script>
 <body>
 <!--Top Navigation-->
     <nav>
@@ -24,6 +27,107 @@
         <a href="contact.html" id="contact-button">Contact us</a>
     </nav>
 
+    <section id="apply-box">
+        <img src="assets/apply-banner.webp" alt="flight case banner" id="photo-banner">
+
+        <div id="apply-card">
+            <h2>Application Flight Case 2025</h2>
+            <p>
+                Great that you are interested in joining Flight Case 2025! On this page, you can find all the
+                information you need for applying.<br><br>
+            </p>
+            <p style="color: #c60620">Deadline</p>
+            <p>Friday January 10th 2025, 23:59<br><br></p>
+            <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=TVJuCSlpMECM04q0LeCIe6jIbAfYYuVLhPaCN9BqbXpUNkFNQ1JJSkFLMVMwRFBGUzNMWjhGOUpERSQlQCN0PWcu" target="_blank">
+                Apply now
+            </a>
+        </div>
+    </section>
+
+    <section id="how-to">
+        <div id="what">
+            <h2>What is in my application?</h2>
+            <p>
+                When applying for Flight Case 2025, you are asked to hand in a motivation letter, your CV and your
+                portfolio
+            </p>
+        </div>
+        <div id="collapsibles">
+            <div class="container">
+                <div class="top-line"></div>
+                <div class="collapsible" onclick="toggleChild.call(this)">
+                    <h4>Motivation letter</h4>
+                    <p class="expander">+</p>
+                    <p>
+                        Write a motivation letter in which you at least answer the following questions:<br><br>
+
+                        - Why do you want to join Flight Case?<br>
+                        - What will you bring to Flight Case?<br><br>
+
+                        <span style="font-weight: bold">Maximum of 350 words</span><br><br>
+
+                        File name format:<br>
+                        motivation_studentnumber.pdf
+                    </p>
+                </div>
+                <div class="collapsible" onclick="toggleChild.call(this)">
+                    <h4>CV</h4>
+                    <p class="expander">+</p>
+                    <p>
+                        In your CV you can include your education, work experience, committees, internships,
+                        skills etc.<br><br>
+
+                        <span style="font-weight: bold">Max 1 A4</span><br><br>
+
+                        File name format:<br>
+                        cv_studentnumber.pdf
+                    </p>
+                </div>
+                <div class="collapsible" onclick="toggleChild.call(this)">
+                    <h4>Portfolio</h4>
+                    <p class="expander">+</p>
+                    <p>
+                        Your portfolio should include:<br><br>
+
+                        - 1 page about who you are as a designer.<br>
+                        - A maximum of 3 projects<br><br>
+
+                        Make sure everything you want to tell is in the 8 pages. Don’t link to things outside the
+                        PDF, such as videos.<br><br>
+
+                        To have a fair way of comparing portfolios, we have standardised the documents to be a PDF.
+                        Unfortunately, we do not accept website portfolios.<br><br>
+
+                        <span style="font-weight: bold">Max 8 pages</span><br><br>
+
+                        File name format:<br>
+                        portfolio_studentnumber.pdf
+                    </p>
+                </div>
+                <div class="collapsible" onclick="toggleChild.call(this)">
+                    <h4>Extra: 'Fun' question</h4>
+                    <p class="expander">+</p>
+                    <p>
+                        In the application form, we included a ‘fun’ question:<br><br>
+
+                        - Describe what kind of sushi you are.<br>
+                        - Use this description as a prompt to make an AI image. (eg. with Midjourney or ChatGPT)<br>
+                        - Upload this image to the form.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="anonymize">
+            <h2>Anonymize your application</h2>
+            <p>
+                We will make the participants selection by judging anonymous applications.
+                <span style="font-weight: bold">Make sure to remove your
+                name, gender and nationality from the deliverables.</span>
+                Instead, include your student number.
+            </p>
+        </div>
+        <img src="assets/example-application.webp" alt="example application">
+    </section>
 
 <!--Bottom Footer-->
     <footer>

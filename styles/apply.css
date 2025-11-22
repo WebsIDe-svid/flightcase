@@ -1,0 +1,92 @@
+#apply-box {
+    position: relative;
+    background-color: var(--white);
+}
+
+#apply-box #photo-banner {
+    height: 30vh;
+    width: 100%;
+    object-fit: cover;
+    padding-bottom: 50vh;
+}
+
+#apply-box #apply-card {
+    position: absolute;
+    top: 20vh;
+    left: 50%;
+    width: 65%;
+    transform: translate(-50%, 0);
+
+    background-color: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+
+    box-sizing: border-box;
+    padding: 5%;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+#apply-box #apply-card h2 {
+    letter-spacing: 2px;
+}
+
+#apply-box #apply-card p {
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+#apply-box #apply-card a {
+    padding: 1em 5em 1em 5em;
+    width: fit-content;
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 100px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#how-to {
+    background-color: var(--white);
+    box-sizing: border-box;
+    padding: 0 10% 5% 10%;
+
+    display: grid;
+    grid-template-areas:
+        "what collapsibles"
+        "anonymize example";
+    grid-template-columns: 48% 48%;
+    column-gap: 4%;
+    row-gap: 5%;
+}
+
+#how-to h2 {
+    letter-spacing: 2px;
+    font-weight: 500;
+    padding-bottom: 1em;
+}
+
+#how-to p {
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+#how-to #what {
+    grid-area: what;
+}
+
+#how-to #collapsibles {
+    grid-area: collapsibles;
+}
+
+#how-to #anonymize {
+    grid-area: anonymize;
+}
+
+#how-to img {
+    grid-area: example;
+    width: 100%;
+}
