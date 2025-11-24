@@ -75,7 +75,7 @@ footer #instagram-link #instagram-logo-img {
     aspect-ratio: 1/1;
 }
 
-@media (max-width: 600px) {
+@media (orientation: portrait) {
     footer {
         display: grid;
         grid-template-areas:
