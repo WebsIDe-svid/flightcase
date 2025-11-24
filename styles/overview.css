@@ -302,7 +302,7 @@
     font-size: 18px;
 }
 
-@media (max-width: 600px){
+@media (orientation: portrait){
     #opening-section #banner {
         height: 32vh;
         object-position: 0 40%;
