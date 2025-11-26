@@ -7,18 +7,27 @@
     height: 30vh;
     width: 100%;
     object-fit: cover;
-    padding-bottom: 50vh;
+    @media (orientation: landscape) and (height > 800px) {
+        padding-bottom: 50vh;
+    }
 }
 
 #apply-box #apply-card {
-    position: absolute;
-    top: 20vh;
-    left: 50%;
-    width: 65%;
-    transform: translate(-50%, 0);
+    @media (orientation: landscape) and (height > 800px) {
+        position: absolute;
+        top: 20vh;
+        left: 50%;
+        width: 65%;
+        transform: translate(-50%, 0);
+
+        border-radius: 15px;
+    }
+    @media (orientation: portrait) or (height < 800px) {
+        width: 100%;
+        margin-bottom: 5%;
+    }
 
     background-color: var(--white);
-    border-radius: 15px;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
 
     box-sizing: border-box;
@@ -32,11 +41,19 @@
 
 #apply-box #apply-card h2 {
     letter-spacing: 2px;
+    @media (orientation: portrait) {
+        font-size: 70px;
+    }
 }
 
 #apply-box #apply-card p {
     letter-spacing: 1px;
-    font-size: 18px;
+    @media (orientation: landscape) {
+        font-size: 18px;
+    }
+    @media (orientation: portrait) {
+        font-size: 40px;
+    }
 }
 
 #apply-box #apply-card a {
@@ -47,6 +64,13 @@
     border-radius: 100px;
     text-decoration: none;
     font-weight: 500;
+
+    @media (orientation: landscape) {
+        font-size: 18px;
+    }
+    @media (orientation: portrait) {
+        font-size: 40px;
+    }
 }
 
 #how-to {
@@ -55,12 +79,21 @@
     padding: 0 10% 5% 10%;
 
     display: grid;
-    grid-template-areas:
-        "what collapsibles"
-        "anonymize example";
-    grid-template-columns: 48% 48%;
+
+    @media (orientation: landscape) {
+        grid-template-areas:
+            "what collapsibles"
+            "anonymize example";
+        grid-template-columns: 48% 48%;
+    }
+    @media (orientation: portrait) {
+        grid-template-areas:
+            "what"
+            "collapsibles"
+            "anonymize"
+            "example";
+    }
     column-gap: 4%;
-    row-gap: 5%;
 }
 
 #how-to h2 {
@@ -76,17 +109,21 @@
 
 #how-to #what {
     grid-area: what;
+    margin-bottom: 5%;
 }
 
 #how-to #collapsibles {
     grid-area: collapsibles;
+    margin-bottom: 5%;
 }
 
 #how-to #anonymize {
     grid-area: anonymize;
+    margin-bottom: 5%;
 }
 
 #how-to img {
     grid-area: example;
     width: 100%;
+    margin-bottom: 5%;
 }
