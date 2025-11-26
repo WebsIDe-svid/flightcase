@@ -12,10 +12,19 @@
 
 #opening-section #introduction {
     display: grid;
-    grid-template-areas:
+    @media (orientation: landscape) {
+        grid-template-areas:
         "title image"
         "text image"
         "apply image";
+    }
+    @media (orientation: portrait) {
+        grid-template-areas:
+        "title"
+        "text"
+        "apply"
+        "image";
+    }
 
     grid-template-columns: auto min-content;
     grid-template-rows: min-content auto min-content;
@@ -50,7 +59,14 @@
     grid-area: image;
     max-height: 40vh;
     align-self: center;
-    justify-self: end;
+    @media (orientation: landscape) {
+        justify-self: end;
+        max-width: 40vw;
+    }
+    @media (orientation: portrait) {
+        max-width: 100%;
+        justify-self: center;
+    }
 }
 
 #what-we-offer {
@@ -58,12 +74,21 @@
     background-color: var(--dark-white);
 
     display: grid;
-    grid-template-areas:
-        "title title"
-        "card1 card2"
-        "card3 card4";
+    @media (orientation: landscape) {
+        grid-template-areas:
+            "title title"
+            "card1 card2"
+            "card3 card4";
+    }
+    @media (orientation: portrait) {
+        grid-template-areas:
+            "title"
+            "card1"
+            "card2"
+            "card3"
+            "card4";
+    }
 
-    row-gap: 2.5%;
     column-gap: 1%;
 }
 
@@ -77,6 +102,7 @@
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
     padding: 5%;
+    margin-bottom: 2.5%;
 
     display: flex;
     flex-direction: column;
@@ -87,12 +113,22 @@
 
 #what-we-offer .card h3 {
     font-weight: 500;
-    font-size: 25px;
+    @media (orientation: landscape) {
+        font-size: 25px;
+    }
+    @media (orientation: portrait) {
+        font-size: 40px;
+    }
     letter-spacing: 2px;
 }
 
 #what-we-offer .card p {
-    font-size: 18px;
+    @media (orientation: landscape) {
+        font-size: 18px;
+    }
+    @media (orientation: portrait) {
+        font-size: 30px;
+    }
     color: var(--light-gray);
     letter-spacing: 1px;
 }
@@ -124,12 +160,24 @@
     background-color: var(--dark-white);
 
     display: grid;
-    grid-template-areas:
-        "title title title"
-        "subtitle subtitle subtitle"
-        "card1 card2 card3"
-        "course course course"
-        "date date date";
+    @media (orientation: landscape) {
+        grid-template-areas:
+            "title title title"
+            "subtitle subtitle subtitle"
+            "card1 card2 card3"
+            "course course course"
+            "date date date";
+    }
+    @media (orientation: portrait) {
+        grid-template-areas:
+            "title"
+            "subtitle"
+            "card1"
+            "card2"
+            "card3"
+            "course"
+            "date"
+    }
 
     column-gap: 1%;
 }
@@ -153,6 +201,13 @@
 
     display: flex;
     flex-direction: column;
+
+    @media (orientation: landscape) {
+        font-size: 18px;
+    }
+    @media (orientation: portrait) {
+        font-size: 30px;
+    }
 }
 
 #timeline .card img {
@@ -165,25 +220,26 @@
     box-sizing: border-box;
     padding: 10%;
     letter-spacing: 1px;
+    font-size: inherit;
 }
 
 #timeline .card .card-text h4 {
-    font-size: 20px;
     font-weight: 500;
     margin: 0;
     padding-bottom: 1em;
+    font-size: inherit;
 }
 
 #timeline .card .card-text p {
-    font-size: 18px;
     color: var(--light-gray);
+    font-size: inherit;
 }
 
 #timeline .card .card-text h5 {
-    font-size: 18px;
     color: black;
     margin: 0;
     font-weight: normal;
+    font-size: inherit;
 }
 
 #timeline .card .card-text .time {
@@ -196,6 +252,7 @@
 #timeline .card .card-text a {
     color: var(--blue);
     opacity: 0.9;
+    font-size: inherit;
 }
 
 #timeline #timeline-card1 {
@@ -218,8 +275,13 @@
 #timeline #course-date {
     grid-area: date;
     color: var(--light-gray);
-    font-size: 18px;
-    text-align: center;
+    @media (orientation: landscape) {
+        text-align: center;
+        font-size: 18px;
+    }
+    @media (orientation: portrait) {
+        font-size: 12px;
+    }
 }
 
 #students-faq {

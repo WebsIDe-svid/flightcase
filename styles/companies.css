@@ -201,19 +201,19 @@
     opacity: 1;
 }
 
-#packages #offer-card1 {
+#packages #card1 {
     grid-area: card1;
 }
 
-#packages #offer-card2 {
+#packages #card2 {
     grid-area: card2;
 }
 
-#packages #offer-card3 {
+#packages #card3 {
     grid-area: card3;
 }
 
-#packages #offer-card4 {
+#packages #card4 {
     grid-area: card4;
 }
 
@@ -256,4 +256,206 @@
     font-weight: 500;
     letter-spacing: 2px;
     font-size: 18px;
+}
+
+@media (orientation: portrait) {
+    #opening-section {
+
+    }
+
+    #opening-section #photo-banner {
+        width: 100%;
+        height: 20vh;
+    }
+
+    #opening-section #introduction {
+        display: grid;
+        grid-template-areas:
+        "title image"
+        "text text"
+        "contact contact";
+    }
+
+    #opening-section #introduction h2 {
+        grid-area: title;
+        font-size: 40px;
+        line-height: 1.4em;
+    }
+
+    #opening-section #introduction p {
+        grid-area: text;
+        font-size: 20px;
+    }
+
+    #opening-section #introduction a {
+        grid-area: contact;
+        padding: .8em 1.6em .8em 1.6em;
+        font-size: 20px;
+        margin-top: 25px;
+        letter-spacing: 2px;
+    }
+
+    #opening-section #introduction img {
+        grid-area: image;
+        max-height: 15vh;
+        align-self: left;
+        justify-self: left;
+        margin-right: 10vh;
+    }
+
+    .companies-quote {
+    }
+
+    .companies-quote .quote-text {
+        font-size: 24px;
+    }
+
+    .companies-quote .quote-author {
+        font-size: 14px;
+    }
+
+    #process {
+        display: flex;
+        flex-direction: column;
+
+        box-sizing: border-box;
+        padding: 5% 10% 5% 10%;
+
+        row-gap: 1.75em;
+    }
+
+    #process h2 {
+        font-size: 40px;
+        text-align: left;
+    }
+
+    #process .card {
+        padding: 5%;
+
+        display: grid;
+        grid-template-areas:
+        "image image"
+        "title title"
+        "text text";
+
+        grid-template-rows: 35%;
+        column-gap: 5%;
+    }
+
+    #process .card img {
+        grid-area: image;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #process .card h3 {
+        grid-area: title;
+        font-size: 30px;
+    }
+
+    #process .card p {
+        grid-area: text;
+        font-size: 20px;
+    }
+
+    #packages {
+        display: grid;
+        grid-template-areas:
+        "title title"
+        "card1 card1"
+        "card2 card2"
+        "card3 card3"
+        "card4 card4";
+
+        column-gap: 1%;
+        row-gap: 1%;
+        padding-bottom: 15%;
+    }
+
+    #packages h2 {
+        grid-area: title;
+        font-size: 40px;
+    }
+
+    #packages .card {
+        box-sizing: border-box;
+        padding: 5%;
+
+        display: flex;
+        flex-direction: column;
+        row-gap: 1em;
+        margin: 0% 0% 2.5% 0%;
+    }
+
+    #packages .card h3 {
+        font-weight: 500;
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
+
+    #packages .card p {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+
+    #packages .card .days {
+    }
+
+    #packages .card .set {
+
+    }
+
+    #packages .card .set .part {
+        font-size: 16px;
+    }
+
+    #packages .card .set .part.selected {
+    }
+
+    #packages #card1 {
+        grid-area: card1;
+    }
+
+    #packages #card2 {
+        grid-area: card2;
+    }
+
+    #packages #card3 {
+        grid-area: card3;
+    }
+
+    #packages #card4 {
+        grid-area: card4;
+    }
+
+    #seperator {
+    }
+
+    #sounds-interesting {
+        box-sizing: border-box;
+        padding: 2.5%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.8em;
+
+        align-items: center;
+    }
+
+    #sounds-interesting h2 {
+        letter-spacing: 3px;
+        font-size: 40px;
+    }
+
+    #sounds-interesting h3 {
+        font-size: 25px;
+        font-weight: normal;
+        padding-bottom: 0.5em;
+        text-align: center;
+    }
+
+    #sounds-interesting a {
+        font-size: 20px;
+        margin-bottom: 2.5%;
+    }
 }
