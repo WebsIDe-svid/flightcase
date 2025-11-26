@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="98a87ff8-e3bc-4700-9c53-a7fddc5650a8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/styles/about-us.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/about-us.css" afterDir="false" />
+    <list default="true" id="ae968d92-4e0f-4d07-ba70-f445293bb5b8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/styles/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/footer.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +13,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dev" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -28,10 +33,9 @@
   }
 }</component>
   <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 3
+  &quot;associatedIndex&quot;: 2
 }</component>
-  <component name="ProjectId" id="35yTBpVKa83fWvX5HYWJMdfMLmS" />
+  <component name="ProjectId" id="35qAPyfTWteOQdGFp5Tc6bWJv3N" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -39,12 +43,13 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "JavaScript Debug.about-us.html.executor": "Run",
-    "JavaScript Debug.contact.html.executor": "Run",
+    "JavaScript Debug.index.html.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "aboutus-mobile",
+    "git-widget-placeholder": "footer-mobile",
+    "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -54,6 +59,12 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\thmve\WebstormProjects\flightcase\.idea" />
+      <recent name="C:\Users\thmve\WebstormProjects\flightcase\styles" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -63,13 +74,17 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="98a87ff8-e3bc-4700-9c53-a7fddc5650a8" name="Changes" comment="" />
-      <created>1764081179870</created>
+      <changelist id="ae968d92-4e0f-4d07-ba70-f445293bb5b8" name="Changes" comment="" />
+      <created>1763827208634</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1764081179870</updated>
-      <workItem from="1764081181342" duration="2009000" />
-      <workItem from="1764083212525" duration="3101000" />
+      <updated>1763827208634</updated>
+      <workItem from="1763827211009" duration="3489000" />
+      <workItem from="1763830742375" duration="10452000" />
+      <workItem from="1763906278995" duration="84000" />
+      <workItem from="1763906380126" duration="97000" />
+      <workItem from="1763906485054" duration="1279000" />
+      <workItem from="1763907779915" duration="2520000" />
     </task>
     <servers />
   </component>
