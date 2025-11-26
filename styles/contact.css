@@ -3,6 +3,11 @@
     height: 40vh;
     object-fit: cover;
     object-position: 0 -200px;
+
+    @media (orientation: portrait) {
+        object-position: 0 -75px;
+        height: 25vh;
+    }
 }
 
 #information {
@@ -12,10 +17,22 @@
     display: flex;
     flex-direction: row;
     column-gap: 10%;
+
+    @media (orientation: portrait) {
+        display: grid;
+        grid-template-areas:
+        "title title"
+        "description description"
+        "link link";
+    }
 }
 
 #information #contact-text {
     width: 40%;
+
+    @media (orientation: portrait) {
+        width: 100%;
+    }
 }
 
 #information #contact-text h2 {
@@ -23,20 +40,32 @@
     font-weight: 500;
     margin-bottom: .5em;
     letter-spacing: 2px;
+
+    @media (orientation: portrait) {
+        font-size: 40px;
+        grid-area: title;
+        margin-bottom: 0em;
+    }
 }
 
 #information #contact-text p {
     font-size: 20px;
     letter-spacing: 1px;
+    grid-area: description;
 }
 
 #information #contact-email {
-
+    @media (orientation: portrait) {
+        grid-area: link;
+    }
 }
 
 #information #contact-email h3 {
     padding-top: 3em;
     font-size: 25px;
+    @media (orientation: portrait) {
+        padding-top: 2em;
+    }
 }
 
 #information #contact-email a {
