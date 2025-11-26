@@ -146,15 +146,15 @@
     object-fit: contain;
 }
 
-#what-we-offer #offer-card1 {
+#what-we-offer #card1 {
     grid-area: card1;
 }
 
-#what-we-offer #offer-card2 {
+#what-we-offer #card2 {
     grid-area: card2;
 }
 
-#what-we-offer #offer-card3 {
+#what-we-offer #card3 {
     grid-area: card3;
 }
 
@@ -300,4 +300,213 @@
 #sounds-interesting p {
     color: var(--light-gray);
     font-size: 18px;
+}
+
+@media (orientation: portrait){
+    #opening-section #banner {
+        height: 32vh;
+        object-position: 0 40%;
+    }
+
+    #opening-section #introduction {
+        padding: 3% 5% 0% 10%;
+    }
+
+    #opening-section #introduction h2 {
+        font-size: 30px;
+    }
+
+    #opening-section #introduction h1 {
+        font-size: 45px;
+        line-height: 1;
+    }
+
+    #opening-section #introduction p {
+        font-size: 20px;
+    }
+
+    #opening-section #introduction #date {
+        font-size: 15px;
+    }
+
+    #overview-quote {
+        letter-spacing: 2px;
+
+        box-sizing: border-box;
+        padding: 5% 10% 5% 10%;
+    }
+
+    #overview-quote #quote-text {
+        font-size: 25px;
+    }
+
+    #overview-quote #quote-author {
+        font-size: 14px;
+    }
+
+    #what-we-offer {
+        display: grid;
+        grid-template-areas:
+        "title title title"
+        "card1 card1 card1"
+        "card2 card2 card2"
+        "card3 card3 card3"
+        "benefits benefits benefits";
+        column-gap: 1%;
+        box-sizing: border-box;
+        padding: 5% 10% 5% 10%;
+    }
+
+    #what-we-offer h2 {
+        font-size: 40px;
+        font-weight: 500;
+        margin-bottom: 0.5em;
+    }
+
+    #what-we-offer .card {
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+        padding: 10%;
+        margin: 0% 0% 5% 0%;
+        display: grid;
+        grid-template-areas:
+        "image head head"
+        "text text text";
+    }
+
+    #what-we-offer .card .card-image {
+        width: 60%;
+        height: 90%;
+        aspect-ratio: 1/1;
+        object-fit: contain;
+        grid-area: image;
+    }
+
+    #what-we-offer #card1 {
+        grid-area: card1;
+    }
+
+    #what-we-offer #card2 {
+        grid-area: card2;
+    }
+
+    #what-we-offer #card3 {
+        grid-area: card3;
+    }
+
+    #what-we-offer .card h3 {
+        font-size: 30px;
+        grid-area: head;
+        line-height: 1.2;
+        margin-bottom: 0.5em;
+    }
+
+    #what-we-offer .card p {
+        font-size: 20px;
+        grid-area: text;
+    }
+
+    #what-we-offer #benefits {
+        grid-area: benefits;
+    }
+
+    #our-experience {
+        display: grid;
+        grid-template-areas:
+        "title title"
+        "collaborations collaborations"
+        "destinations destinations"
+        "example example";
+
+        padding: 5% 10% 15% 10%;
+        gap: 1%;
+    }
+
+    #our-experience h2 {
+        grid-area: title;
+        font-size: 40px;
+        margin-bottom: 0em;
+    }
+
+    #our-experience .card {
+        box-sizing: border-box;
+        padding: 10%;
+        margin: 0% 0% 2% 0%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1em;
+    }
+
+    #our-experience #collaborations {
+        grid-area: collaborations;
+    }
+
+    #our-experience #destinations {
+        grid-area: destinations;
+    }
+
+    #our-experience #example {
+        grid-area: example;
+    }
+
+    #our-experience #example img, #our-experience #destinations img {
+        aspect-ratio: 2/1;
+    }
+
+    #our-experience .card h3 {
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    #our-experience .card p {
+        font-size: 20px;
+    }
+
+    #our-experience .card img {
+    }
+
+    #our-experience .card a {
+    }
+
+    #seperator {
+    }
+
+    #sounds-interesting {
+        box-sizing: border-box;
+        padding: 2.5%;
+
+        display: flex;
+        flex-direction: column;
+        row-gap: 1em;
+
+        align-items: center;
+    }
+
+    #sounds-interesting h2 {
+        letter-spacing: 3px;
+        font-size: 40px;
+    }
+
+    #sounds-interesting #interested-links {
+        display: flex;
+        flex-direction: column;
+        column-gap: 1em;
+    }
+
+    #sounds-interesting a {
+        border-radius: 100px;
+        margin-bottom: 2.5%;
+        margin-top: 2.5%;
+        padding: .8em 1.6em .8em 1.6em;
+        font-weight: 500;
+        letter-spacing: 2px;
+        font-size: 20px;
+    }
+
+    #sounds-interesting #contact-us {
+    }
+
+    #sounds-interesting p {
+        font-size: 20px;
+    }
 }
