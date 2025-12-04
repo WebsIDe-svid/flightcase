@@ -1,137 +1,85 @@
 footer {
-    display: grid;
-    grid-template-areas:
-        "logo logo title"
-        "logo logo address"
-        "logo logo link"
-        "logo logo instagram";
+    width: 100%;
 
-    background-color: var(--gray);
+    display: grid;
+    @media (orientation: landscape) {
+        grid-template-areas:
+            "logo links";
+        grid-template-columns: 50% 50%;
+    }
+    @media (orientation: portrait) {
+        grid-template-areas:
+            "logo"
+            "links";
+        grid-template-rows: 50% 50%;
+    }
+
+    background-color: var(--blue);
 
     box-sizing: border-box;
-    padding: 3vw 20vw 3vw 10vw;
+    padding: 1vw 3vw 1vw 3vw;
 
+    color: var(--white);
     letter-spacing: 2px;
     line-height: 1.4;
-    justify-content: space-between;
 
-    row-gap: 2vw;
+    background-clip: border-box;
 }
 
-footer #footer-logo {
+footer #footer-logos {
     grid-area: logo;
     display: flex;
 
-    align-self: start;
     flex-direction: row;
-    align-items: center;
-
     columns: min-content auto;
-    height: 40%;
+
+    height: 100%;
+    width: 50%;
+
+    align-items: center;
 }
 
-footer #footer-logo #globe {
-    max-width: 25%;
+footer #footer-logos #ID {
+    max-width: 50%;
     max-height: 100%;
-
-    margin-right: 5vw;
+    margin-right: 1em;
 }
 
-footer #footer-logo #tu-delft-logo {
-    max-width: 60%;
+footer #footer-logos #tu-delft-logo {
+    max-width: calc(50% - 1em);
     max-height: 80%;
 }
 
-footer #footer-title {
-    grid-area: title;
+footer #links {
+    grid-area: links;
 
-    color: white;
-    font-size: 25px;
-    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
-footer #address {
-    grid-area: address;
+footer #links a {
+    display: flex;
+    flex-direction: row;
 
-    color: white;
-    font-size: 20px;
+    columns: min-content auto;
+    padding: 2% 0 2% 0;
+
+    align-items: center;
+    color: var(--white);
+    text-decoration: none;
 }
 
-footer #footer-link {
-    grid-area: link;
-
-    color: var(--pink);
-    font-size: 15px;
-    text-decoration-line: underline;
-}
-
-footer #instagram-link {
-    grid-area: instagram;
-}
-
-footer #instagram-link #instagram-logo-img {
-    filter: brightness(0) invert(1);
-    width: 30px;
+footer #links a img {
+    width: 5%;
     aspect-ratio: 1/1;
+    margin-right: 1em;
 }
 
-@media (orientation: portrait) {
-    footer {
-        display: grid;
-        grid-template-areas:
-        "... logo ..."
-        "... title ..."
-        "... address ..."
-        "... link ..."
-        "... instagram ...";
-    }
+footer #links a h3 {
+    font-size: var(--body-text);
+}
 
-    footer #footer-logo {
-        grid-area: logo;
-        display: flex;
-
-        flex-direction: column;
-        align-items: center;
-    }
-
-    footer #footer-logo #globe {
-        max-width: 45%;
-        max-height: 100%;
-
-        margin-bottom: 7.5vw;
-        margin-top: 5vw;
-        margin-left: 10vw;
-    }
-
-    footer #footer-logo #tu-delft-logo {
-        max-width: 70%;
-        max-height: 80%;
-    }
-
-    footer #footer-title {
-        grid-area: title;
-        text-align: center;
-        font-size: 30px;
-    }
-
-    footer #address {
-        grid-area: address;
-        text-align: center;
-        font-size: 20px;
-    }
-
-    footer #footer-link {
-        grid-area: link;
-        text-align: center;
-        font-size: 15px;
-    }
-
-    footer #instagram-link {
-        grid-area: instagram;
-        text-align: center;
-    }
-
-    footer #instagram-link #instagram-logo-img {
-        width: 50px;
-    }
+footer #links a #email {
+    text-decoration: underline;
 }

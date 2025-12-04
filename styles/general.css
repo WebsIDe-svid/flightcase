@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: Jost;
-    src: url(../fonts/Jost-Medium.ttf);
+    src: url(../fonts/Jost-SemiBold.ttf);
     font-weight: 500;
 }
 
@@ -15,46 +15,70 @@
     font-weight: bold;
 }
 
-@font-face {
-    font-family: Jost;
-    src: url(../fonts/Jost-ExtraLight.ttf);
-    font-weight: 200;
-}
-
 body {
-    --white: #ffffff;
-    --dark-white: #f5f5f7;
-    --gray: #26313a;
-    --light-gray: #647887;
-    --blue: #0368b5;
-    --pink: #d94081;
+    /* Colors */
+    --white: #fefefe;
+    --black: #1e1e1e;
+    --red: #e92401;
+    --beige: #fff4da;
+    --blue: #00199d;
+    --yellow: #fecc00;
+    --light-blue: #2796cd;
+    --pink: #ff73bc;
+    --purple: #5b237a;
+    --green: #00ae02;
 
+    /* Text sizes */
+    @media (pointer: fine) {
+        --title: 96px;
+        --main-header: 48px;
+        --sub-header: 32px;
+        --body-text: 20px;
+    }
+    @media (pointer: coarse) {
+        --title: 124px;
+        --main-header: 72px;
+        --sub-header: 64px;
+        --body-text: 40px;
+    }
+
+    /* Other */
     background-color: var(--white);
 
     font-family: Jost, sans-serif;
     font-weight: normal;
-    color: var(--gray);
+    color: var(--black);
 
     margin: 0;
 }
 
 h1 {
     font-weight: bold;
-    font-size: 60px;
+    font-size: var(--title);
     margin: 0;
 }
 
 h2 {
-    font-weight: bold;
-    font-size: 45px;
+    font-weight: 500;
+    font-size: var(--main-header);
     margin: 0;
 }
 
 h3 {
+    font-weight: 500;
+    font-size: var(--sub-header);
     margin: 0;
 }
 
 p {
-    font-size: 25px;
+    font-weight: normal;
+    font-size: var(--body-text);
     margin: 0;
+}
+
+a {
+    font-weight: 500;
+    font-size: var(--body-text);
+    margin: 0;
+    text-decoration: none;
 }
