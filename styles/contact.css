@@ -29,6 +29,7 @@
 #information p {
     letter-spacing: 1px;
     grid-area: description;
+    margin-bottom: 1em;
 }
 
 #information a {

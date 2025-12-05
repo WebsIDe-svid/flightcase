@@ -15,136 +15,94 @@
 <script src="scripts/collapsible-text.js"></script>
 <body>
 <!--Top Navigation-->
-    <nav>
-        <a href="index.html" id="top-logo-link">
-            <img src="assets/logo-white.svg" alt="Flight Case 2026" id="flightcase-logo-img">
+<nav>
+    <a href="index.html" id="top-logo-link">
+        <img src="assets/logo-white.svg" alt="Flight Case 2026" id="flightcase-logo-img">
+    </a>
+
+    <a href="index.html">Overview</a>
+    <a href="companies.html">For companies</a>
+    <a href="students.html">For students</a>
+    <a href="about-us.html">About us</a>
+    <a href="contact.html" id="contact-button">Contact us</a>
+</nav>
+
+<section id="apply-box">
+    <img src="assets/banners/apply-banner.png" alt="flight case banner" id="photo-banner">
+
+    <div id="apply-card">
+        <h2>Application Flight Case 2026</h2>
+        <p>
+            Find all the details below.
+        </p>
+        <p style="color: var(--red); margin-bottom: 0">Deadline</p>
+        <p>Friday, January 9th 2026, 23:59</p>
+        <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=TVJuCSlpMECM04q0LeCIe6jIbAfYYuVLhPaCN9BqbXpUNkFNQ1JJSkFLMVMwRFBGUzNMWjhGOUpERSQlQCN0PWcu" target="_blank">
+            Apply ➜
         </a>
+    </div>
+</section>
 
-        <a href="index.html">Overview</a>
-        <a href="companies.html">For companies</a>
-        <a href="students.html">For students</a>
-        <a href="about-us.html">About us</a>
-        <a href="contact.html" id="contact-button">Contact us</a>
-    </nav>
-
-    <section id="apply-box">
-        <img src="assets/apply-banner.webp" alt="flight case banner" id="photo-banner">
-
-        <div id="apply-card">
-            <h2>Application Flight Case 2025</h2>
-            <p>
-                Great that you are interested in joining Flight Case 2025! On this page, you can find all the
-                information you need for applying.<br><br>
-            </p>
-            <p style="color: #c60620">Deadline</p>
-            <p>Friday January 10th 2025, 23:59<br><br></p>
-            <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=TVJuCSlpMECM04q0LeCIe6jIbAfYYuVLhPaCN9BqbXpUNkFNQ1JJSkFLMVMwRFBGUzNMWjhGOUpERSQlQCN0PWcu" target="_blank">
-                Apply now
-            </a>
-        </div>
-    </section>
-
-    <section id="how-to">
-        <div id="what">
-            <h2>What is in my application?</h2>
-            <p>
-                When applying for Flight Case 2025, you are asked to hand in a motivation letter, your CV and your
-                portfolio
-            </p>
-        </div>
-        <div id="collapsibles">
-            <div class="container">
-                <div class="top-line"></div>
-                <div class="collapsible" onclick="toggleChild.call(this)">
-                    <h4>Motivation letter</h4>
-                    <p class="expander">+</p>
-                    <p>
-                        Write a motivation letter in which you at least answer the following questions:<br><br>
-
-                        - Why do you want to join Flight Case?<br>
-                        - What will you bring to Flight Case?<br><br>
-
-                        <span style="font-weight: bold">Maximum of 350 words</span><br><br>
-
-                        File name format:<br>
-                        motivation_studentnumber.pdf
-                    </p>
-                </div>
-                <div class="collapsible" onclick="toggleChild.call(this)">
-                    <h4>CV</h4>
-                    <p class="expander">+</p>
-                    <p>
-                        In your CV you can include your education, work experience, committees, internships,
-                        skills etc.<br><br>
-
-                        <span style="font-weight: bold">Max 1 A4</span><br><br>
-
-                        File name format:<br>
-                        cv_studentnumber.pdf
-                    </p>
-                </div>
-                <div class="collapsible" onclick="toggleChild.call(this)">
-                    <h4>Portfolio</h4>
-                    <p class="expander">+</p>
-                    <p>
-                        Your portfolio should include:<br><br>
-
-                        - 1 page about who you are as a designer.<br>
-                        - A maximum of 3 projects<br><br>
-
-                        Make sure everything you want to tell is in the 8 pages. Don’t link to things outside the
-                        PDF, such as videos.<br><br>
-
-                        To have a fair way of comparing portfolios, we have standardised the documents to be a PDF.
-                        Unfortunately, we do not accept website portfolios.<br><br>
-
-                        <span style="font-weight: bold">Max 8 pages</span><br><br>
-
-                        File name format:<br>
-                        portfolio_studentnumber.pdf
-                    </p>
-                </div>
-                <div class="collapsible" onclick="toggleChild.call(this)">
-                    <h4>Extra: 'Fun' question</h4>
-                    <p class="expander">+</p>
-                    <p>
-                        In the application form, we included a ‘fun’ question:<br><br>
-
-                        - Describe what kind of sushi you are.<br>
-                        - Use this description as a prompt to make an AI image. (eg. with Midjourney or ChatGPT)<br>
-                        - Upload this image to the form.
-                    </p>
-                </div>
+<section id="how-to">
+    <h2 id="parts">What are the parts of the application?</h2>
+    <div id="collapsibles">
+        <div class="container">
+            <div class="top-line"></div>
+            <div class="collapsible" onclick="toggleChild.call(this)">
+                <h4>Application details</h4>
+                <p class="expander">+</p>
+                <p>
+                    Fill in basic applicant details: student number, gender, nationality, and master track
+                </p>
+            </div>
+            <div class="collapsible" onclick="toggleChild.call(this)">
+                <h4>FlightCase application</h4>
+                <p class="expander">+</p>
+                <p>
+                    Using the Canva or Figma templates provided, fill in the FlightCase application and upload as a
+                    PDF to the application form. This is the core of the application process where you can express
+                    your personality and creativity.
+                </p>
+            </div>
+            <div class="collapsible" onclick="toggleChild.call(this)">
+                <h4>Curriculum Vitae (CV)</h4>
+                <p class="expander">+</p>
+                <p>
+                    Upload an anonymized C as a PDF which provides some context about you professionally. While
+                    professional experience is important, this will be the least weighted portion of the application.
+                </p>
             </div>
         </div>
-        <div id="anonymize">
-            <h2>Anonymize your application</h2>
-            <p>
-                We will make the participants selection by judging anonymous applications.
-                <span style="font-weight: bold">Make sure to remove your
-                name, gender and nationality from the deliverables.</span>
-                Instead, include your student number.
-            </p>
-        </div>
-        <img src="assets/example-application.webp" alt="example application">
-    </section>
-
-<!--Bottom Footer-->
-    <footer>
-        <div id="footer-logos">
-            <img src="assets/favicon.webp" alt="Globe" id="ID">
-            <img src="assets/TU+DELFT.webp" alt="TUD Logo" id="tu-delft-logo">
-        </div>
-        <p id="footer-title">Flight Case 2025</p>
-        <p id="address">
-            Landbergstraat 15<br>
-            Delft, 2628 CE<br>
-            The Netherlands
+    </div>
+    <h2 id="anonymize">Anonymize your application</h2>
+    <div id="anonymize-example">
+        <p>
+            We will make the participants selection by judging anonymous applications.
+            <span style="font-weight: bold">Make sure to remove your
+            name, gender and nationality from the deliverables.</span>
+            Instead, include your student number.
         </p>
-        <a href="mailto:flightcase-svid@tudelft.nl" id="email-link">flightcase-svid@tudelft.nl</a>
-        <a href="https://www.instagram.com/flightcase.ide/" target="_blank" id="instagram">
-            <img src="assets/instragram-icon.svg" alt="Instagram" id="instagram-link">
+
+        <img src="assets/example-application.webp" alt="example application">
+    </div>
+</section>
+
+<!--    Bottom Footer-->
+<footer>
+    <div id="footer-logos">
+        <img src="assets/ID-logo.png" alt="ID Logo" id="ID">
+        <img src="assets/TU+DELFT.webp" alt="TUD Logo" id="TUD">
+    </div>
+    <div id="links">
+        <a href="mailto:flightcase-svid@tudelft.nl">
+            <img src="assets/icons/email.svg" alt="Email">
+            <h3 id="email">flightcase-svid@tudelft.nl</h3>
         </a>
-    </footer>
+        <a href="https://www.instagram.com/flightcase.ide/">
+            <img src="assets/icons/instagram.svg" alt="Instagram">
+            <h3>flightcase.ide</h3>
+        </a>
+    </div>
+</footer>
 </body>
 </html>
