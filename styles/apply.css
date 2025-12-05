@@ -112,7 +112,8 @@
 
     @media (orientation: landscape) {
         display: grid;
-        grid-template-columns: 30% 70%;
+        grid-template-columns: 40% 55%;
+        column-gap: 5%;
     }
 }
 

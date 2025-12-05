@@ -24,6 +24,7 @@ footer {
     line-height: 1.4;
 
     background-clip: border-box;
+    margin-top: auto;
 }
 
 footer #footer-logos {
@@ -67,6 +68,10 @@ footer #links a {
     align-items: center;
     color: var(--white);
     text-decoration: none;
+
+    @media (orientation: portrait) {
+        margin-bottom: .5em;
+    }
 }
 
 footer #links a img {
