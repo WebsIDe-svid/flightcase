@@ -27,6 +27,7 @@
     grid-template-areas:
         "title expander"
         "text text";
+    grid-template-columns: auto min-content;
     cursor: pointer;
 
     border-style: solid;
