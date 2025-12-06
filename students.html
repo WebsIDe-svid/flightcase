@@ -13,18 +13,34 @@
     <link rel="stylesheet" href="styles/students.css">
 </head>
 <script src="scripts/collapsible-text.js"></script>
+<script src="scripts/navigation-mobile.js"></script>
 <body>
 <!--Top Navigation-->
-<nav>
-    <a href="index.html" id="top-logo-link">
-        <img src="assets/logo-white.svg" alt="Flight Case 2026" id="flightcase-logo-img">
+<nav id="desktop-navigation">
+    <a href="index.html" id="desktop-logo-link">
+        <img src="assets/logo-white.svg" alt="Flight Case 2026" class="flightcase-logo-img">
     </a>
 
     <a href="index.html">Overview</a>
     <a href="companies.html">For companies</a>
     <a class="current-page" href="students.html">For students</a>
     <a href="about-us.html">About us</a>
-    <a href="contact.html" id="contact-button">Contact us</a>
+    <a href="contact.html" class="contact-button">Contact us</a>
+</nav>
+<nav id="mobile-navigation">
+    <a href="index.html" id="mobile-logo-link">
+        <img src="assets/logo-white.svg" alt="Flight Case 2026" class="flightcase-logo-img">
+    </a>
+
+    <img src="assets/icons/menu-mobile.svg" alt="Menu" id="burger-menu" onclick="toggleMenu()">
+
+    <div id="mobile-menu">
+        <a href="index.html">Overview</a>
+        <a href="companies.html">For companies</a>
+        <a class="current-page" href="students.html">For students</a>
+        <a href="about-us.html">About us</a>
+        <a href="contact.html" class="contact-button">Contact us</a>
+    </div>
 </nav>
 
 <section id="banner">
@@ -118,7 +134,7 @@
             <h4>When is the application deadline?</h4>
             <p class="expander">+</p>
             <p>
-                The deadline for the applications is 23:59 CET 9th January, 2026.
+                The deadline for the applications is 23:59 CET 9th January 2026.
             </p>
         </div>
         <div class="collapsible" onclick="toggleChild.call(this)">

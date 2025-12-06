@@ -29,13 +29,13 @@ body {
     --green: #00ae02;
 
     /* Text sizes */
-    @media (pointer: fine) {
+    @media (orientation: landscape) {
         --title: 96px;
         --main-header: 48px;
         --sub-header: 32px;
         --body-text: 20px;
     }
-    @media (pointer: coarse) {
+    @media (orientation: portrait) {
         --title: 124px;
         --main-header: 72px;
         --sub-header: 64px;
