@@ -180,9 +180,15 @@
     padding: 5% 10% 5% 10%;
     box-sizing: border-box;
 
-    display: grid;
-    grid-template-columns: 20% auto;
-    column-gap: 5%;
+    @media (orientation: landscape) {
+        display: grid;
+        grid-template-columns: 20% auto;
+        column-gap: 5%;
+    }
+    @media (orientation: portrait) {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 #students-faq h2 {

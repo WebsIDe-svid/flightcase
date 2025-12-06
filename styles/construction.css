@@ -18,6 +18,9 @@
 
     box-sizing: border-box;
     padding: 10% 20% 10% 20%;
+    @media (pointer: coarse) and (orientation: landscape) {
+        padding: 10% 5% 10% 5%;
+    }
 }
 
 #under-construction img {

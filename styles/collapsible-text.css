@@ -7,6 +7,10 @@
         --collapsible-header: 64px;
         --collapsible-text: 40px;
     }
+    @media (pointer: coarse) and (orientation: landscape) {
+        --collapsible-header: 32px;
+        --collapsible-text: 20px;
+    }
 
     color: var(--red)
 }
