@@ -1,5 +1,8 @@
 nav {
-    --nav-height: 8.5vh;
+    --nav-height: 80px;
+    @media (orientation: portrait) {
+        --nav-height: 8.5vh;
+    }
     @media (pointer: coarse) and (orientation: landscape) {
         --nav-height: 20vh;
     }
