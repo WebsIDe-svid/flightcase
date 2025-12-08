@@ -1,0 +1,122 @@
+#apply-box {
+    position: relative;
+    background-color: var(--white);
+}
+
+#apply-box #photo-banner {
+    height: 30vh;
+    width: 100%;
+    object-fit: cover;
+    @media (orientation: landscape) and (height > 800px) {
+        padding-bottom: 50vh;
+    }
+}
+
+#apply-box #apply-card {
+    @media (orientation: landscape) and (height > 800px) {
+        position: absolute;
+        top: 20vh;
+        left: 50%;
+        width: 65%;
+        transform: translate(-50%, 0);
+
+        border-radius: 15px;
+    }
+    @media (orientation: portrait) or (height < 800px) {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    background-color: var(--beige);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+
+    box-sizing: border-box;
+    padding: 5%;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+#apply-box #apply-card h2 {
+    letter-spacing: 2px;
+    color: var(--red);
+}
+
+#apply-box #apply-card p {
+    letter-spacing: 1px;
+    margin-bottom: 1em;
+}
+
+#apply-box #apply-card a {
+    padding: 1em 5em 1em 5em;
+    width: fit-content;
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 100px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#how-to {
+    background-color: var(--white);
+    box-sizing: border-box;
+    padding: 0 10% 5% 10%;
+
+    display: grid;
+
+    @media (orientation: landscape) {
+        grid-template-areas:
+            "what collapsibles"
+            "anonymize example";
+        grid-template-columns: 40% 56%;
+        column-gap: 4%;
+    }
+    @media (orientation: portrait) {
+        grid-template-areas:
+            "what"
+            "collapsibles"
+            "anonymize"
+            "example";
+    }
+}
+
+#how-to h2 {
+    letter-spacing: 2px;
+    padding-bottom: 1em;
+}
+
+#how-to p {
+    letter-spacing: 1px;
+}
+
+#how-to #parts {
+    grid-area: what;
+    margin-bottom: 5%;
+}
+
+#how-to #collapsibles {
+    grid-area: collapsibles;
+    margin-bottom: 5%;
+}
+
+#how-to #anonymize {
+    grid-area: anonymize;
+    margin-bottom: 5%;
+}
+
+#how-to #anonymize-example {
+    grid-area: example;
+    align-items: center;
+
+    @media (orientation: landscape) {
+        display: grid;
+        grid-template-columns: 40% 55%;
+        column-gap: 5%;
+    }
+}
+
+#how-to #anonymize-example img {
+    width: 100%;
+}

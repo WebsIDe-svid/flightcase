@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="">
+<head>
+    <meta charset="UTF-8">
+    <title>Flight Case 2026</title>
+
+    <link rel="icon" type="image/x-icon" href="assets/favicon.webp">
+
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/navigation.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/overview.css">
+</head>
+<script src="scripts/overview-video.js"></script>
+<script src="scripts/navigation-mobile.js"></script>
+<body>
+<!--Top Navigation-->
+<nav class="landingpage-nav" id="desktop-navigation">
+    <a href="index.html" id="desktop-logo-link">
+        <img src="assets/logo-red.svg" alt="Flight Case 2026" class="flightcase-logo-img">
+    </a>
+
+    <a href="contact.html" class="contact-button">Contact us</a>
+</nav>
+<nav class="landingpage-nav" id="mobile-navigation">
+    <a href="index.html" id="mobile-logo-link">
+        <img src="assets/logo-red.svg" alt="Flight Case 2026" class="flightcase-logo-img">
+    </a>
+
+    <img src="assets/icons/menu-mobile.svg" alt="Menu" class="landing-page-burger-menu" id="burger-menu"
+         onclick="toggleMenu()">
+
+    <div id="mobile-menu">
+        <a class="current-page" href="index.html">Overview</a>
+        <a href="companies.html">For companies</a>
+        <a href="students.html">For students</a>
+        <a href="about-us.html">About us</a>
+        <a href="contact.html" class="contact-button">Contact us</a>
+    </div>
+</nav>
+
+<section id="banner">
+    <h2>FLIGHTCASE 2026</h2>
+    <h1>A collaboration to bring Delft Design abroad</h1>
+    <div id="buttons">
+        <a href="companies.html">Companies ➜</a>
+        <a href="students.html" id="students-button">Students ➜</a>
+    </div>
+</section>
+
+<section id="partners">
+    <h3>Previous partners</h3>
+</section>
+
+<section id="introduction-video">
+    <img src="assets/intro-video-thumbnail.webp" alt="Flight Case 2025" id="thumbnail" onclick="playVideo()">
+    <img src="assets/play-icon.svg" alt="Play" id="play-icon" onclick="playVideo()">
+
+    <iframe src="https://www.youtube.com/embed/Dn9w8g5iC8g?rel=0" title="Flight Case 2024"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen id="video"></iframe>
+</section>
+
+<!--    Bottom Footer-->
+<footer>
+    <div id="footer-logos">
+        <img src="assets/ID-logo.png" alt="ID Logo" id="ID">
+        <img src="assets/TUD-logo.webp" alt="TUD Logo" id="TUD">
+    </div>
+    <div id="links">
+        <a href="mailto:flightcase-svid@tudelft.nl">
+            <img src="assets/icons/email.svg" alt="Email">
+            <h3 id="email">flightcase-svid@tudelft.nl</h3>
+        </a>
+        <a href="https://www.instagram.com/flightcase.ide/">
+            <img src="assets/icons/instagram.svg" alt="Instagram">
+            <h3>flightcase.ide</h3>
+        </a>
+    </div>
+</footer>
+</body>
+</html>

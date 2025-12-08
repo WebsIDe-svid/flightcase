@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Apply - Flight Case 2026</title>
+
+    <link rel="icon" type="image/x-icon" href="assets/favicon.webp">
+
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/navigation.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/collapsible-text.css">
+    <link rel="stylesheet" href="styles/apply.css">
+</head>
+<script src="scripts/collapsible-text.js"></script>
+<script src="scripts/navigation-mobile.js"></script>
+<body>
+<!--Top Navigation-->
+<nav id="desktop-navigation">
+    <a href="index.html" id="desktop-logo-link">
+        <img src="assets/logo-white.svg" alt="Flight Case 2026" class="flightcase-logo-img">
+    </a>
+
+    <a href="index.html">Overview</a>
+    <a href="companies.html">For companies</a>
+    <a href="students.html">For students</a>
+    <a href="about-us.html">About us</a>
+    <a href="contact.html" class="contact-button">Contact us</a>
+</nav>
+<nav id="mobile-navigation">
+    <a href="index.html" id="mobile-logo-link">
+        <img src="assets/logo-white.svg" alt="Flight Case 2026" class="flightcase-logo-img">
+    </a>
+
+    <img src="assets/icons/menu-mobile.svg" alt="Menu" id="burger-menu" onclick="toggleMenu()">
+
+    <div id="mobile-menu">
+        <a href="index.html">Overview</a>
+        <a href="companies.html">For companies</a>
+        <a href="students.html">For students</a>
+        <a href="about-us.html">About us</a>
+        <a href="contact.html" class="contact-button">Contact us</a>
+    </div>
+</nav>
+
+<section id="apply-box">
+    <img src="assets/banners/apply-banner.png" alt="flight case banner" id="photo-banner">
+
+    <div id="apply-card">
+        <h2>Application Flight Case 2026</h2>
+        <p>
+            Find all the details below.
+        </p>
+        <p style="color: var(--red); margin-bottom: 0">Deadline</p>
+        <p>Friday, January 9th 2026, 23:59</p>
+        <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=TVJuCSlpMECM04q0LeCIe6jIbAfYYuVLhPaCN9BqbXpUNkFNQ1JJSkFLMVMwRFBGUzNMWjhGOUpERSQlQCN0PWcu" target="_blank">
+            Apply ➜
+        </a>
+    </div>
+</section>
+
+<section id="how-to">
+    <h2 id="parts">What are the parts of the application?</h2>
+    <div id="collapsibles">
+        <div class="container">
+            <div class="collapsible" onclick="toggleChild.call(this)">
+                <h4>Application details</h4>
+                <p class="expander">+</p>
+                <p>
+                    Fill in basic applicant details: student number, gender, nationality, and master track
+                </p>
+            </div>
+            <div class="collapsible" onclick="toggleChild.call(this)">
+                <h4>FlightCase application</h4>
+                <p class="expander">+</p>
+                <p>
+                    Using the Canva or Figma templates provided, fill in the FlightCase application and upload as a
+                    PDF to the application form. This is the core of the application process where you can express
+                    your personality and creativity.
+                </p>
+            </div>
+            <div class="collapsible" onclick="toggleChild.call(this)">
+                <h4>Curriculum Vitae (CV)</h4>
+                <p class="expander">+</p>
+                <p>
+                    Upload an anonymized C as a PDF which provides some context about you professionally. While
+                    professional experience is important, this will be the least weighted portion of the application.
+                </p>
+            </div>
+        </div>
+    </div>
+    <h2 id="anonymize">Anonymize your application</h2>
+    <div id="anonymize-example">
+        <p>
+            We will make the participants selection by judging anonymous applications.
+            <span style="font-weight: bold">Make sure to remove your
+            name, gender and nationality from the deliverables.</span>
+            Instead, include your student number.
+        </p>
+
+        <img src="assets/anonymous-application.svg" alt="example application">
+    </div>
+</section>
+
+<!--    Bottom Footer-->
+<footer>
+    <div id="footer-logos">
+        <img src="assets/ID-logo.png" alt="ID Logo" id="ID">
+        <img src="assets/TUD-logo.webp" alt="TUD Logo" id="TUD">
+    </div>
+    <div id="links">
+        <a href="mailto:flightcase-svid@tudelft.nl">
+            <img src="assets/icons/email.svg" alt="Email">
+            <h3 id="email">flightcase-svid@tudelft.nl</h3>
+        </a>
+        <a href="https://www.instagram.com/flightcase.ide/">
+            <img src="assets/icons/instagram.svg" alt="Instagram">
+            <h3>flightcase.ide</h3>
+        </a>
+    </div>
+</footer>
+</body>
+</html>

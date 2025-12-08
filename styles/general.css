@@ -1,0 +1,88 @@
+@font-face {
+    font-family: Jost;
+    src: url(../fonts/Jost-Regular.ttf);
+}
+
+@font-face {
+    font-family: Jost;
+    src: url(../fonts/Jost-SemiBold.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Jost;
+    src: url(../fonts/Jost-Bold.ttf);
+    font-weight: bold;
+}
+
+body {
+    /* Colors */
+    --white: #fefefe;
+    --black: #1e1e1e;
+    --red: #e92401;
+    --beige: #fff4da;
+    --blue: #00199d;
+    --yellow: #fecc00;
+    --light-blue: #2796cd;
+    --pink: #ff73bc;
+    --purple: #5b237a;
+    --green: #00ae02;
+
+    /* Text sizes */
+    @media (orientation: landscape) {
+        --title: 96px;
+        --main-header: 48px;
+        --sub-header: 32px;
+        --body-text: 20px;
+    }
+    @media (orientation: portrait) {
+        --title: 124px;
+        --main-header: 72px;
+        --sub-header: 64px;
+        --body-text: 40px;
+    }
+
+    /* Other */
+    background-color: var(--white);
+
+    font-family: Jost, sans-serif;
+    font-weight: normal;
+    color: var(--black);
+
+    margin: 0;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: var(--title);
+    margin: 0;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: var(--main-header);
+    margin: 0;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: var(--sub-header);
+    margin: 0;
+}
+
+p {
+    font-weight: normal;
+    font-size: var(--body-text);
+    margin: 0;
+}
+
+a {
+    font-weight: 500;
+    font-size: var(--body-text);
+    margin: 0;
+    text-decoration: none;
+}
