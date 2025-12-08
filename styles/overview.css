@@ -40,13 +40,13 @@
 #banner h1 {
     grid-area: title;
     width: 75%;
-    line-height: 1.0;
+    line-height: 1.1;
     margin-bottom: 0.5em;
 }
 
 #banner #buttons {
     grid-area: buttons;
-    margin-bottom: 10em;
+    margin-bottom: 9em;
 
     display: flex;
     flex-direction: row;
@@ -65,6 +65,7 @@
     border-style: solid;
     border-width: 3px;
     text-align: center;
+    font-weight: 600;
     letter-spacing: 0.15em;
     margin-bottom: 1em;
     display: flex;

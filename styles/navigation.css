@@ -65,7 +65,8 @@ nav a {
 
 nav .current-page {
     letter-spacing: 2px;
-    text-decoration-line: underline;
+    padding-right: -0.01em;
+    border-bottom: 3px solid var(--white);
 }
 
 nav .contact-button {
