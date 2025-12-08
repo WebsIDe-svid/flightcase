@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>For Students - Flight Case 2025</title>
+    <title>For Students - Flight Case 2026</title>
 
-    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.webp">
 
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/navigation.css">
@@ -13,254 +13,184 @@
     <link rel="stylesheet" href="styles/students.css">
 </head>
 <script src="scripts/collapsible-text.js"></script>
+<script src="scripts/navigation-mobile.js"></script>
 <body>
 <!--Top Navigation-->
-    <nav>
-        <a href="index.html" id="top-logo-link">
-            <img src="assets/Logo.webp" alt="Flight Case 2025" id="flightcase-logo-img">
-        </a>
+<nav id="desktop-navigation">
+    <a href="index.html" id="desktop-logo-link">
+        <img src="assets/logo-white.svg" alt="Flight Case 2026" class="flightcase-logo-img">
+    </a>
 
+    <a href="index.html">Overview</a>
+    <a href="companies.html">For companies</a>
+    <a class="current-page" href="students.html">For students</a>
+    <a href="about-us.html">About us</a>
+    <a href="contact.html" class="contact-button">Contact us</a>
+</nav>
+<nav id="mobile-navigation">
+    <a href="index.html" id="mobile-logo-link">
+        <img src="assets/logo-white.svg" alt="Flight Case 2026" class="flightcase-logo-img">
+    </a>
+
+    <img src="assets/icons/menu-mobile.svg" alt="Menu" id="burger-menu" onclick="toggleMenu()">
+
+    <div id="mobile-menu">
         <a href="index.html">Overview</a>
         <a href="companies.html">For companies</a>
         <a class="current-page" href="students.html">For students</a>
         <a href="about-us.html">About us</a>
-        <a href="contact.html" id="contact-button">Contact us</a>
-    </nav>
+        <a href="contact.html" class="contact-button">Contact us</a>
+    </div>
+</nav>
 
-    <section id="opening-section">
-        <div id="photo-banner"></div>
+<section id="banner">
+    <h1>Applications open on the 15th December!</h1>
+    <a href="apply.html">Interest form ➜</a>
+</section>
 
-        <div id="introduction">
-            <h2>Your next adventure</h2>
-            <p>
-                During this summer, 28 master students and 2 professors will go to Japan to work on cases for inspiring
-                companies, experience the local culture and much more!<br><br>
+<section id="basic-information">
+    <h1>FlightCase: Taiwan 2026</h1>
+    <p>FlightCase is an annual study trip in which master’s students collaborate with international companies on
+        real-world design challenges. In 2026, a group of 28 students (20 participants and 8 committee members)
+        and 2 professors will travel to Taiwan, where they will engage with industry partners, explore the local
+        design and innovation landscape, and work on company-sponsored cases. The trip will take place between 22
+        July to 9 August 2026 in Taiwan.<br><br>FlightCase’s goal is to facilitate culture, experience and growth
+        opportunity for the masters students at IDE TU Delft.</p>
+    <img src="assets/student-collaboration.png" alt="Students working">
+</section>
 
-                The aim of Flight Case is to create an experience that connects an international team of qualified
-                master students with leading companies all over the world. It will allow you as a student to build
-                up an international network and experience working in another culture.<br><br>
+<section id="what-we-offer">
+    <h2>What we offer</h2>
 
-                We will 'work hard', but also 'play hard'. We want to show you the contrasts: city vs. nature, the
-                global vs. the local, and more. We aim to provide you with an experience you will never forget!<br><br>
-            </p>
-            <a href="contact.html">Applications are closed</a>
-            <img src="assets/fish-in-water.webp" alt="fish in water">
-        </div>
-    </section>
-
-    <section id="what-we-offer">
-        <h2>What we offer</h2>
-        
-        <div class="card" id="offer-card1">
-            <img src="assets/buildings.webp" alt="buildings">
-            <h3>Work with real companies</h3>
-            <p>
-                Flight Case will enable you to discover your skills and put your knowledge into practice with real
-                companies.
-            </p>
-        </div>
-
-        <div class="card" id="offer-card2">
-            <img src="assets/persons.webp" alt="persons">
-            <h3>Dream team and professional network</h3>
-            <p>
-                You will form a design agency with 27 other students and 2 professors. This is the time to build a
-                professional network that lasts longer than just this trip.
-            </p>
-        </div>
-
-        <div class="card" id="offer-card3">
-            <img src="assets/globe-asia.webp" alt="globe">
-            <h3>Experience another culture</h3>
-            <p>
-                During Flight Case, you will immerse yourself in a new lifestyle and experience a different view on
-                design and life habits.
-            </p>
-        </div>
-
-        <div class="card" id="offer-card4">
-            <img src="assets/star-circle.webp" alt="star">
-            <h3>6 ECTS</h3>
-            <p>
-                You will receive 6 ECTS for participating in Flight Case. This includes taking part in Flight Course
-                in Q4. Flight Case is one of the faculty electives you can take.
-            </p>
-        </div>
-    </section>
-
-    <section id="timeline">
-        <h2>Timeline</h2>
-        <h3>Information and application</h3>
-
-        <div class="card" id="timeline-card1">
-            <img src="assets/students-present.webp" alt="presenting students">
-
-            <div class="card-text">
-                <h4>Interest moment</h4>
-                <p class="time">Thursday December 12th 2024 17:00 - 21:00 @ID Kafee</p>
-                <p>
-                    During this evening, we will give a presentation about Flight Case and the application process.
-                    You can ask all your questions. After the interest moment, the applications are open.
-                </p>
-            </div>
-        </div>
-
-        <div class="card" id="timeline-card2">
-            <img src="assets/students-plane.webp" alt="paper airplane">
-
-            <div class="card-text">
-                <h4>Application</h4>
-                <h5>Opening date</h5>
-                <p class="time">Thurdsay December 12th 2024</p>
-                <h5>Deadline</h5>
-                <p class="time">Friday January 10th 2025</p>
-                <p>
-                    Apply for Flight Case 2025 with your motivation, CV and portfolio.
-                </p>
-                <a href="apply.html"><br>More info about application</a>
-            </div>
-        </div>
-
-        <div class="card" id="timeline-card3">
-            <img src="assets/students-destination.webp" alt="destination">
-
-            <div class="card-text">
-                <h4>Participant selection</h4>
-                <p>
-                    The selection of the participants will be done anonymously. Out of the best applications, we will
-                    create a balanced group of students. In this group, different master directions and nationalities
-                    are represented.<br><br>
-
-                    We will start this process right after the application deadline.
-                </p>
-            </div>
-        </div>
-
-        <h3 id="course-title">Flight Course and Flight Case</h3>
-        <p id="course-date">
-            Flight Case will take place somewhere between July 19th and August 10th 2025. Flight Course will be on
-            Mondays in Q4. You are sometimes also expected to work on it outside the Mondays. More info about the
-            Flight Course and Flight Case timeline coming soon.
+    <div class="card" id="offer-card1">
+        <img src="assets/icons/cases.svg" alt="buildings">
+        <h3>Work with international companies</h3>
+        <p>
+            Flight Case will enable you to discover your skills and put your knowledge into practice with real
+            companies.
         </p>
-    </section>
+    </div>
 
-    <section id="students-faq">
-        <h2>FAQs</h2>
-
-        <div class="container" id="faq-container">
-            <div class="top-line"></div>
-            <div class="collapsible" onclick="toggleChild.call(this)">
-                <h4>How many students can go on Flight Case?</h4>
-                <p class="expander">+</p>
-                <p>
-                    From all submissions, we will choose 20 students to join Flight Case. Together with our eight
-                    committee members, that means 28 students will go on the trip, accompanied by 2 professors from IDE.
-                </p>
-            </div>
-            <div class="collapsible" onclick="toggleChild.call(this)">
-                <h4>Who can join Flight Case?</h4>
-                <p class="expander">+</p>
-                <p>
-                    You can join Flight Case if you are enrolled in one of the three masters of IDE at TU Delft. You
-                    also need to be enrolled to one of the masters during the application.
-                </p>
-            </div>
-            <div class="collapsible" onclick="toggleChild.call(this)">
-                <h4>How will you choose the participants?</h4>
-                <p class="expander">+</p>
-                <p>
-                    We will choose the participants based on their motivation, CV and portfolio. We aim to create a
-                    diverse team with a mix of master disciplines and nationalities.
-                </p>
-            </div>
-            <div class="collapsible" onclick="toggleChild.call(this)">
-                <h4>When will I know if I can participate?</h4>
-                <p class="expander">+</p>
-                <p>
-                    You should hear back from us around the last week of January or the first week of February. It will
-                    take us some time process the applications. If you get accepted, you have one week to decide if
-                    you want to accept your place.
-                </p>
-            </div>
-            <div class="collapsible" onclick="toggleChild.call(this)">
-                <h4>How much does it cost to participate in Flight Case?</h4>
-                <p class="expander">+</p>
-                <p>
-                    The price to join Flight Case is <span style="font-weight: bold">€1250</span>, which will cover
-                    the flights, local transportation, accommodation, daily meals, and activities during the trip.
-                </p>
-            </div>
-            <div class="collapsible" onclick="toggleChild.call(this)">
-                <h4>Is travel insurance included in the application fee?</h4>
-                <p class="expander">+</p>
-                <p>
-                    No, you are responsible for your own insurances (e.g. travel, health, luggage, accident insurance).
-                </p>
-            </div>
-            <div class="collapsible" onclick="toggleChild.call(this)">
-                <h4>What is Flight Course?</h4>
-                <p class="expander">+</p>
-                <p>
-                    In Q4, Flight Course is an elective to prepare the cases for the trip. The elective will be
-                    scheduled on the Mondays of Q4. On Mondays, there are no other electives. Attending Flight Course
-                    is mandatory to join Flight Case and to get your 6 ECTs.
-                </p>
-            </div>
-            <div class="collapsible" onclick="toggleChild.call(this)">
-                <h4>What companies will we be working with?</h4>
-                <p class="expander">+</p>
-                <p>
-                    We are looking for diverse companies that can provide us with different cases that will fit all
-                    master's programs. To get a better idea of the type of cases we'll be doing, take a look at
-                    past experiences.
-                </p>
-            </div>
-            <div class="collapsible" onclick="toggleChild.call(this)">
-                <h4>What happens if I decide not to go on Flight Case?</h4>
-                <p class="expander">+</p>
-                <p>
-                    In case a participant withdraws from Flight Case after signing the contract, the participant is
-                    obliged to pay the costs which are caused by withdrawing from Flight Case.
-                </p>
-            </div>
-            <div class="collapsible" onclick="toggleChild.call(this)">
-                <h4>When will we know the exact dates of Flight Case?</h4>
-                <p class="expander">+</p>
-                <p>
-                    We are planning on buying the flight tickets in March. That is the moment when we will know the
-                    exact flying dates. For now, you need to keep the summer planning between July 10th and August
-                    10th free.
-                </p>
-            </div>
-            <div class="collapsible" onclick="toggleChild.call(this)">
-                <h4>What are our ethical considerations for choosing the companies?</h4>
-                <p class="expander">+</p>
-                <p>
-                    When selecting companies for our cases, we adhere to an internal policy that prioritizes ethical
-                    and sustainable considerations. We aim to collaborate with organizations that align with our
-                    values, ensuring that the cases we work on reflect responsible practices and contribute
-                    positively to society.
-                </p>
-            </div>
-        </div>
-    </section>
-
-<!--Bottom Footer-->
-    <footer>
-        <div id="footer-logo">
-            <img src="assets/White-globe.webp" alt="Globe" id="globe">
-            <img src="assets/TU+DELFT.webp" alt="TUD Logo" id="tu-delft-logo">
-        </div>
-        <p id="footer-title">Flight Case 2025</p>
-        <p id="address">
-            Landbergstraat 15<br>
-            Delft, 2628 CE<br>
-            The Netherlands
+    <div class="card" id="offer-card2">
+        <img src="assets/icons/groups.svg" alt="persons">
+        <h3>Dream team and professional network</h3>
+        <p>
+            You will form a design agency with 27 other students and 2 professors. This is the time to build a
+            professional network that lasts longer than just this trip.
         </p>
-        <a href="mailto:flightcase-svid@tudelft.nl" id="footer-link">flightcase-svid@tudelft.nl</a>
-        <a href="https://www.instagram.com/flightcase.ide/" target="_blank" id="instagram-link">
-            <img src="assets/instragram-icon.svg" alt="Instagram" id="instagram-logo-img">
+    </div>
+
+    <div class="card" id="offer-card3">
+        <img src="assets/icons/globe.svg" alt="globe">
+        <h3>Experience another culture</h3>
+        <p>
+            During FlightCase, you will immerse yourself in a new lifestyle and experience a different view on
+            design and life habits.
+        </p>
+    </div>
+
+    <div class="card" id="offer-card4">
+        <img src="assets/icons/star.svg" alt="star">
+        <h3>5 ECTS!</h3>
+        <p>
+            You will receive 5 ECTS for participating in Flight Case. This includes taking part in Flight Course*
+            in Q4. Flight Case is one of the faculty electives you can take.
+        </p>
+    </div>
+
+    <p id="footnote">*Flight Course is a course students have to take in Q4 of the acedemic year to be able to fly
+        for FlightCase</p>
+</section>
+
+<section id="students-faq">
+    <h2>FAQs</h2>
+
+    <div class="container" id="faq-container">
+        <div class="collapsible" onclick="toggleChild.call(this)">
+            <h4>Who can join Flight Case?</h4>
+            <p class="expander">+</p>
+            <p>
+                Participants must be enrolled in one of the three master’s programs at IDE, TU Delft by Fall 2025.
+                Students who are graduating before Fall 2026 cannot apply. You must be enrolled when FlightCase happens.
+            </p>
+        </div>
+        <div class="collapsible" onclick="toggleChild.call(this)">
+            <h4>What is Flight Course?</h4>
+            <p class="expander">+</p>
+            <p>
+                Flight Course is an elective in Q4 linked to FlightCase where we will prepare cases for the trip. You
+                must take it to join the trip and earn 5 ECTS.
+            </p>
+        </div>
+        <div class="collapsible" onclick="toggleChild.call(this)">
+            <h4>How are participants selected?</h4>
+            <p class="expander">+</p>
+            <p>
+                We will choose the participants based on their application questions first, followed by CV. We aim to
+                create a diverse team with a mix of master disciplines and nationalities.
+            </p>
+        </div>
+        <div class="collapsible" onclick="toggleChild.call(this)">
+            <h4>When is the application deadline?</h4>
+            <p class="expander">+</p>
+            <p>
+                The deadline for the applications is 23:59 CET 9th January 2026.
+            </p>
+        </div>
+        <div class="collapsible" onclick="toggleChild.call(this)">
+            <h4>What are the dates for FlightCase?</h4>
+            <p class="expander">+</p>
+            <p>
+                The trip is tentatively scheduled for three weeks starting 22nd July to 9th August, with final dates
+                to be confirmed after cases are secured. For now, all participants should be available for the whole
+                window.
+            </p>
+        </div>
+        <div class="collapsible" onclick="toggleChild.call(this)">
+            <h4>How much will FlightCase cost?</h4>
+            <p class="expander">+</p>
+            <p>
+                Costs may vary depending on flights and accommodation. Participants will contribute
+                <span style="font-weight: bold">€1,250</span>. If funds remain after the trip, they will be
+                redistributed between ID and the participants. Students must arrange their own travel and health
+                insurance.
+            </p>
+        </div>
+        <div class="collapsible" onclick="toggleChild.call(this)">
+            <h4>What happens if I decide not to go on Flight Case?</h4>
+            <p class="expander">+</p>
+            <p>
+                In case a participant withdraws from FlightCase after signing the contract, the participant is
+                obliged to pay the costs which are caused by withdrawing from Flight Case.
+            </p>
+        </div>
+        <div class="collapsible" onclick="toggleChild.call(this)">
+            <h4>Can I travel from a different country to Taiwan?</h4>
+            <p class="expander">+</p>
+            <p>
+                Yes, but total costs must not exceed traveling from the Netherlands. This is largely for students
+                whose home countries are closer to Taiwan than the Netherlands.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!--    Bottom Footer-->
+<footer>
+    <div id="footer-logos">
+        <img src="assets/ID-logo.png" alt="ID Logo" id="ID">
+        <img src="assets/TUD-logo.webp" alt="TUD Logo" id="TUD">
+    </div>
+    <div id="links">
+        <a href="mailto:flightcase-svid@tudelft.nl">
+            <img src="assets/icons/email.svg" alt="Email">
+            <h3 id="email">flightcase-svid@tudelft.nl</h3>
         </a>
-    </footer>
+        <a href="https://www.instagram.com/flightcase.ide/">
+            <img src="assets/icons/instagram.svg" alt="Instagram">
+            <h3>flightcase.ide</h3>
+        </a>
+    </div>
+</footer>
 </body>
 </html>

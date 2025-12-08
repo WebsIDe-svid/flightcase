@@ -21,7 +21,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(255, 255, 255, 0.8);
-    color: var(--gray);
+    color: var(--black);
     padding: 2% 15% 2% 15%;
 
     @media(orientation: portrait) {
@@ -85,7 +85,7 @@
 }
 
 #committee #members .member .role {
-    color: var(--light-gray);
+    color: var(--black);
     padding-bottom: 1em;
     letter-spacing: 1px;
 }

@@ -2,12 +2,6 @@
     width: 100%;
     height: 40vh;
     object-fit: cover;
-    object-position: 0 -200px;
-
-    @media (orientation: portrait) {
-        object-position: 0 -75px;
-        height: 25vh;
-    }
 }
 
 #information {
@@ -15,62 +9,31 @@
     padding: 2% 10% 5% 10%;
 
     display: flex;
-    flex-direction: row;
-    column-gap: 10%;
+    flex-direction: column;
 
-    @media (orientation: portrait) {
-        display: grid;
-        grid-template-areas:
-        "title title"
-        "description description"
-        "link link";
+    @media (orientation: landscape) {
+        width: 70%;
     }
-}
-
-#information #contact-text {
-    width: 40%;
-
     @media (orientation: portrait) {
         width: 100%;
     }
 }
 
-#information #contact-text h2 {
-    font-size: 50px;
+#information h2 {
     font-weight: 500;
     margin-bottom: .5em;
     letter-spacing: 2px;
-
-    @media (orientation: portrait) {
-        font-size: 40px;
-        grid-area: title;
-        margin-bottom: 0em;
-    }
+    color: var(--red)
 }
 
-#information #contact-text p {
-    font-size: 20px;
+#information p {
     letter-spacing: 1px;
     grid-area: description;
+    margin-bottom: 1em;
 }
 
-#information #contact-email {
-    @media (orientation: portrait) {
-        grid-area: link;
-    }
-}
-
-#information #contact-email h3 {
-    padding-top: 3em;
-    font-size: 25px;
-    @media (orientation: portrait) {
-        padding-top: 2em;
-    }
-}
-
-#information #contact-email a {
+#information a {
     text-decoration: underline;
-    color: var(--pink);
-    font-size: 25px;
+    color: var(--red);
     letter-spacing: 1px;
 }

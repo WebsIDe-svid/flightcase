@@ -1,208 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="">
 <head>
     <meta charset="UTF-8">
-    <title>Flight Case 2025</title>
+    <title>Flight Case 2026</title>
 
-    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.webp">
 
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/navigation.css">
     <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" href="styles/collapsible-text.css">
     <link rel="stylesheet" href="styles/overview.css">
 </head>
 <script src="scripts/overview-video.js"></script>
-<script src="scripts/collapsible-text.js"></script>
+<script src="scripts/navigation-mobile.js"></script>
 <body>
 <!--Top Navigation-->
-    <nav>
-        <a href="index.html" id="top-logo-link">
-            <img src="assets/Logo.webp" alt="Flight Case 2025" id="flightcase-logo-img">
-        </a>
+<nav class="landingpage-nav" id="desktop-navigation">
+    <a href="index.html" id="desktop-logo-link">
+        <img src="assets/logo-red.svg" alt="Flight Case 2026" class="flightcase-logo-img">
+    </a>
 
+    <a href="contact.html" class="contact-button">Contact us</a>
+</nav>
+<nav class="landingpage-nav" id="mobile-navigation">
+    <a href="index.html" id="mobile-logo-link">
+        <img src="assets/logo-red.svg" alt="Flight Case 2026" class="flightcase-logo-img">
+    </a>
+
+    <img src="assets/icons/menu-mobile.svg" alt="Menu" class="landing-page-burger-menu" id="burger-menu"
+         onclick="toggleMenu()">
+
+    <div id="mobile-menu">
         <a class="current-page" href="index.html">Overview</a>
         <a href="companies.html">For companies</a>
         <a href="students.html">For students</a>
         <a href="about-us.html">About us</a>
-        <a href="contact.html" id="contact-button">Contact us</a>
-    </nav>
+        <a href="contact.html" class="contact-button">Contact us</a>
+    </div>
+</nav>
 
-    <section id="opening-section">
-        <img src="assets/overview-banner.webp" alt="Flight Case 2025" id="banner">
+<section id="banner">
+    <h2>FLIGHTCASE 2026</h2>
+    <h1>A collaboration to bring Delft Design abroad</h1>
+    <div id="buttons">
+        <a href="companies.html">Companies ➜</a>
+        <a href="students.html" id="students-button">Students ➜</a>
+    </div>
+</section>
 
-        <div id="introduction">
-            <h2>FLIGHT CASE 2025</h2>
-            <h1>A collaboration to bring Delft Design abroad</h1>
-            <p id="date">Between July 19th and August 10th</p>
-            <p>
-                Flight Case is an initiative from Delft University of Technology that has been working with
-                companies abroad for 10 years. We bring fresh knowledge about design with a team of 28 master
-                students and 2 professors. The expertise within our team is diverse, encompassing strategic
-                design, product design, and interaction design, ensuring a well-rounded approach to tackling
-                complex challenges.
-            </p>
-        </div>
-    </section>
+<section id="partners">
+    <h3>Previous partners</h3>
+</section>
 
-    <section id="introduction-video">
-        <img src="assets/intro-video-thumbnail.webp" alt="Flight Case 2025" id="thumbnail" onclick="playVideo()">
-        <img src="assets/play-icon.svg" alt="Play" id="play-icon" onclick="playVideo()">
+<section id="introduction-video">
+    <img src="assets/intro-video-thumbnail.webp" alt="Flight Case 2025" id="thumbnail" onclick="playVideo()">
+    <img src="assets/play-icon.svg" alt="Play" id="play-icon" onclick="playVideo()">
 
-        <iframe src="https://www.youtube.com/embed/Dn9w8g5iC8g?rel=0" title="Flight Case 2024"
-                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen id="video"></iframe>
-    </section>
-
-    <section id="overview-quote">
-        <p id="quote-text">
-            “The whole co-creation process was infused with energy, creative thinking,
-            free flow of ideas, and most importantly, professionalism. We were inspired.”
-        </p>
-        <p id="quote-author">
-            <span style="font-weight: bold;">— Jessica Ho</span>
-            Assistant Marketing Manager Lee Kee Group
-        </p>
-    </section>
-
-    <section id="what-we-offer">
-        <h2>What we offer</h2>
-        <div class="card" id="card1">
-            <img src="assets/card-lightbulb.webp" alt="lightbulb" class="card-image">
-            <h3>Solutions that spark innovation</h3>
-            <p>
-                Every company must invest in its own future through innovation in order to stay ahead of the
-                competition, which sometimes can be challenging. Flight Case helps your company to come up with
-                fresh ideas and innovative solutions.<br><br>
-
-                Young designers still have the mindset of thinking in a wide range of possibilities,
-                rather than restrictions and energize the company with our youthful enthusiasm.
-                Consequently, it is a common positive side-effect that the employees are more involved and
-                happier after working with us.
-            </p>
-        </div>
-        <div class="card" id="card2">
-            <img src="assets/card-connect.webp" alt="connect" class="card-image">
-            <h3>Long-lasting connections</h3>
-            <p>
-                Working together with designers from Delft University of Technology can provide you with long-lasting
-                connections that hold promise for many possibilities in the future. Many students are close to
-                finishing their masters and are exploring their graduation options, future work environments,
-                new research fields or open positions.<br><br>
-
-                Likewise, this can become a showroom for your company as students, professors and alumni, hear
-                from you and can be triggered by the possibilities you offer; not only through real-life experience,
-                yet by the stories that are shared after the trip with their network too.
-            </p>
-        </div>
-        <div class="card" id="card3">
-            <img src="assets/card-book.webp" alt="book" class="card-image">
-            <h3>Famous design methodologies</h3>
-            <p>
-                Our designers have a dual approach to problem-solving rooted in analytical and creative methods.
-                We are able to work with and share the acclaimed Vision in Product Design method and the Delft
-                Innovation Model among many other processes that can benefit your company. These theories have
-                proven their value over time, resulting in trustworthy tools that create impactful solutions.
-            </p>
-        </div>
-
-        <div class="container" id="benefits">
-            <h2>Other benefits</h2>
-            <div class="top-line"></div>
-            <div class="collapsible" onclick="toggleChild.call(this)">
-                <h4>Cost-effective</h4>
-                <p class="expander">+</p>
-                <p>
-                    Compared to large and expensive design agencies, Flight Case is a low-investment and a
-                    low-risk alternative whose deliveries are grounded in the same methods. Even though we
-                    might have less experience, we compensate it by holding fewer prejudices against the
-                    business world and, thus, coming up with more out-of-the-box ideas.
-                </p>
-            </div>
-
-            <div class="collapsible" onclick="toggleChild.call(this)">
-                <h4>Try our designer's mindset</h4>
-                <p class="expander">+</p>
-                <p>
-                    People are often fond of the way designers analyze and solve problems, which makes us be a
-                    great asset for innovation. Creativity is a virtue that has just gained traction and leading
-                    companies around the world are starting to hire designers and use their mindset to solve
-                    their business problems with unconventional and imaginative ideas.
-                </p>
-            </div>
-
-            <div class="collapsible" onclick="toggleChild.call(this)">
-                <h4>Go international</h4>
-                <p class="expander">+</p>
-                <p>
-                    Our group consists of young designers from all over the world. We believe that diversity
-                    enriches the insights in a project and creates a future-proof concept in this globalized
-                    and intertwined economy. Moreover, it is an enormous opportunity to work with people with
-                    different backgrounds and to get to know foreign cultures.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section id="our-experience">
-        <h2>Our experience</h2>
-
-        <div class="card" id="collaborations">
-            <h3>Previous collaborations</h3>
-            <p>
-                We have collaborated with many companies during Flight Case. Your company could be added to this list
-                soon! We would love to get in contact to discuss possibilities.
-            </p>
-            <img src="assets/Companies.webp" alt="company logos">
-        </div>
-        <div class="card" id="destinations">
-            <img src="assets/Destination-Map.webp" alt="previous destinations">
-            <h3>Previous destinations</h3>
-            <p>
-                Flight Case exists for more than ten years! In those years, we have visited a diverse set of
-                destinations. Previous destinations include South Korea, Japan, Singapore, Brazil, Taiwan and China.
-            </p>
-        </div>
-        <div class="card" id="example">
-            <img src="assets/Voorbeeldboek.webp" alt="Example book">
-            <h3>Flight Case 2019 example</h3>
-            <p>
-                In 2019, Flight Case went to Japan. Read here about our experiences and our collaborations with
-                companies.
-            </p>
-            <a href="https://issuu.com/flightcase/docs/fc_showcase_2019__1_" target="_blank">
-                View Flight Case 2019
-            </a>
-        </div>
-    </section>
-
-    <div id="seperator"></div>
-    <section id="sounds-interesting">
-        <h2>Sounds interesting?</h2>
-        <div id="interested-links">
-            <a href="companies.html">More info for companies</a>
-            <a href="students.html">More info for students</a>
-        </div>
-        <p>Or</p>
-        <a href="contact.html" id="contact-us">Contact us</a>
-    </section>
+    <iframe src="https://www.youtube.com/embed/Dn9w8g5iC8g?rel=0" title="Flight Case 2024"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen id="video"></iframe>
+</section>
 
 <!--    Bottom Footer-->
-    <footer>
-        <div id="footer-logo">
-            <img src="assets/White-globe.webp" alt="Globe" id="globe">
-            <img src="assets/TU+DELFT.webp" alt="TUD Logo" id="tu-delft-logo">
-        </div>
-        <p id="footer-title">Flight Case 2025</p>
-        <p id="address">
-            Landbergstraat 15<br>
-            Delft, 2628 CE<br>
-            The Netherlands
-        </p>
-        <a href="mailto:flightcase-svid@tudelft.nl" id="footer-link">flightcase-svid@tudelft.nl</a>
-        <a href="https://www.instagram.com/flightcase.ide/" target="_blank" id="instagram-link">
-            <img src="assets/instragram-icon.svg" alt="Instagram" id="instagram-logo-img">
+<footer>
+    <div id="footer-logos">
+        <img src="assets/ID-logo.png" alt="ID Logo" id="ID">
+        <img src="assets/TUD-logo.webp" alt="TUD Logo" id="TUD">
+    </div>
+    <div id="links">
+        <a href="mailto:flightcase-svid@tudelft.nl">
+            <img src="assets/icons/email.svg" alt="Email">
+            <h3 id="email">flightcase-svid@tudelft.nl</h3>
         </a>
-    </footer>
+        <a href="https://www.instagram.com/flightcase.ide/">
+            <img src="assets/icons/instagram.svg" alt="Instagram">
+            <h3>flightcase.ide</h3>
+        </a>
+    </div>
+</footer>
 </body>
 </html>

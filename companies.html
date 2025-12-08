@@ -2,241 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>For Companies - Flight Case 2025</title>
+    <title>Contact Us - Flight Case 2026</title>
 
-    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.webp">
 
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/navigation.css">
     <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" href="styles/companies.css">
+    <link rel="stylesheet" href="styles/construction.css">
 </head>
+<script src="scripts/navigation-mobile.js"></script>
 <body>
 <!--Top Navigation-->
-    <nav>
-        <a href="index.html" id="top-logo-link">
-            <img src="assets/Logo.webp" alt="Flight Case 2025" id="flightcase-logo-img">
-        </a>
+<nav id="desktop-navigation">
+    <a href="index.html" id="desktop-logo-link">
+        <img src="assets/logo-white.svg" alt="Flight Case 2026" class="flightcase-logo-img">
+    </a>
 
+    <a href="index.html">Overview</a>
+    <a class="current-page" href="companies.html">For companies</a>
+    <a href="students.html">For students</a>
+    <a href="about-us.html">About us</a>
+    <a href="contact.html" class="contact-button">Contact us</a>
+</nav>
+<nav id="mobile-navigation">
+    <a href="index.html" id="mobile-logo-link">
+        <img src="assets/logo-white.svg" alt="Flight Case 2026" class="flightcase-logo-img">
+    </a>
+
+    <img src="assets/icons/menu-mobile.svg" alt="Menu" id="burger-menu" onclick="toggleMenu()">
+
+    <div id="mobile-menu">
         <a href="index.html">Overview</a>
         <a class="current-page" href="companies.html">For companies</a>
         <a href="students.html">For students</a>
         <a href="about-us.html">About us</a>
-        <a href="contact.html" id="contact-button">Contact us</a>
-    </nav>
+        <a href="contact.html" class="contact-button">Contact us</a>
+    </div>
+</nav>
 
-    <section id="opening-section">
-        <img src="assets/companies-banner.webp" alt="Flight Case 2025" id="photo-banner">
+<section id="under-construction">
+    <img src="assets/icons/construction.svg" alt="Under construction">
+    <h2>Under Construction</h2>
+    <p>
+        We're working on it!<br>
+        In the meantime, follow our instagram for updates.
+    </p>
+    <a href="https://www.instagram.com/flightcase.ide/">@flightcase.ide</a>
+</section>
 
-        <div id="introduction">
-            <h2>Your next collaboration</h2>
-            <p>
-                You and your company see the potential in collaborating with Flight Case. understanding that it is a
-                great opportunity to trigger innovation within your organization. This is the moment we start our
-                collaboration!<br><br>
-
-                From now on, we will begin defining the content of the cases. Starting in April, we will prepare the
-                cases from the Netherlands and in July we will visit your offices to finish the work and present the
-                final outcomes.
-            </p>
-            <a href="contact.html">Contact us</a>
-            <img src="assets/Concentric+fish-12.webp" alt="concentric fish">
-        </div>
-    </section>
-
-    <section class="companies-quote">
-        <p class="quote-text">
-            “My suggestion to the next years companies is to have faith in these young men and women, challenge them
-            with some difficult topics.”
-        </p>
-        <p class="quote-author">
-            <span style="font-weight: bold;">— Ronson Leun</span>
-            Manager Business Development, Tai Sing Industrial
-        </p>
-    </section>
-
-    <section id="process">
-        <h2>The Flight Case Process</h2>
-        
-        <div class="card">
-            <img src="assets/companies-step-1.webp" alt="step 1">
-            <h3>1. Getting in contact</h3>
-            <p>
-                You hear about the possibilities we have to offer, and you are keen on starting a conversation with
-                us. Then, we will be more than happy to think along with you on the content and deliverables of
-                the project.<br><br>
-
-                Making it a collaborative journey will benefit both your company and our designers, who will be
-                working for you in these valuable cases.
-            </p>
-        </div>
-
-        <div class="card">
-            <img src="assets/companies-step-2.webp" alt="step 2">
-            <h3>2. Case definition</h3>
-            <p>
-                The case definition states what challenge or challenges you would like us to work in; we will support
-                you in shaping and writing this brief.<br><br>
-
-                Cases can be in the direction of strategic development, concept design, service development, product
-                creation or anything else that you and your company consider worthwhile, no matter how challenging
-                it is. We are also willing to participate in large issues such as organization transitions,
-                regulatory manifestos or city-scopes. Do not hesitate to go wild.
-            </p>
-        </div>
-
-        <div class="card">
-            <img src="assets/companies-step-3.webp" alt="step 3">
-            <h3>3. Research and preparation</h3>
-            <p>
-                In April, our students and professors will start preparing for the cases by analyzing the current
-                situation of your business and the context of the topic. Stakeholders will be defined, and we will
-                explore the domain and trends. On top of that, we will sharpen our skills to adequately solve these
-                cases.<br><br>
-
-                This process will be facilitated with customized workshops and lectures that help our designers to
-                gain knowledge about the topic. As the case progresses, we will keep you up to date by sending status
-                reports on a regular basis.
-            </p>
-        </div>
-
-        <div class="card">
-            <img src="assets/companies-step-4.webp" alt="step 4">
-            <h3>4. In-house development and delivery</h3>
-            <p>
-                The aim of the Flight Case team is to travel to Japan for 3 weeks in July/August 2025. During our stay,
-                we will visit your company to introduce our research, continue developing the solutions further and
-                eventually present the deliverables.<br><br>
-
-                During the case days, there is room for exploring possibilities with the designers on a more personal
-                level and expanding your and your employee's networks. The professors are leading actors in the
-                industry, and they are always eager to collaborate and share their knowledge with you. By the same
-                token, many students are close to graduation, and they would love to hear what your company has to
-                offer.
-            </p>
-        </div>
-
-        <div class="card">
-            <img src="assets/companies-step-5.webp" alt="step 5">
-            <h3>5. Publication and reflection</h3>
-            <p>
-                After the visit, we will provide your company with the final reports that will contain the outcomes
-                of the work that has been done. Besides, we will share the results with other professors and students
-                at the TU Delft, raising exposure of your company and the program.<br><br>
-
-                Ultimately, as part of the final stage, a reflection in which we ask you for your experiences will
-                be needed. In doing so, we will be able to improve our program in the future.
-            </p>
-        </div>
-    </section>
-
-    <section class="companies-quote">
-        <p class="quote-text">
-            “A design thinking workshop opens up your mind and makes you approach problems from different perspectives.
-            You actually see new solutions and new possibilities. It was a wonderful experience to see the students at
-            work and to see the appreciation of the companies with the end results that was always unexpected.”
-        </p>
-        <p class="quote-author">
-            <span style="font-weight: bold;">— Prof.Ir. M.A. Voût</span>
-            Pro Vice Rector International Affairs Faculty IDE TU Delft
-        </p>
-    </section>
-
-    <section id="packages">
-        <h2>Our case packages</h2>
-
-        <div class="card" id="card1">
-            <h3>Package 1</h3>
-            <p>
-                We apply creative and consistent design methods to shed light on your challenges, delivering
-                visionary solutions that are innovative, original and future proof. These types of cases provide
-                your company with new insights and directions to tackle future innovations.
-            </p>
-            <p class="days"><span style="font-weight: bold; color: black">2 case days</span> 1 in Delft, 1 in Japan</p>
-            <div class="set">
-                <p class="part selected">Ideation</p>
-                <p class="part">Conceptualisation</p>
-                <p class="part">Problem analysis</p>
-                <p class="part">Trends & Developments</p>
-                <p class="part">Customer insights</p>
-            </div>
-        </div>
-
-        <div class="card" id="card2">
-            <h3>Package 2</h3>
-            <p>
-                We use methods to analyze and reframe the problem, studying it from a user-centred perspective and
-                use these insights as a basis for ideation. After that, we elaborate the most promising ideas into
-                basic concepts that solve your company’s challenges.
-            </p>
-            <p class="days"><span style="font-weight: bold; color: black">4 case days</span> 2 in Delft, 2 in Japan</p>
-            <div class="set">
-                <p class="part selected">Ideation</p>
-                <p class="part selected">Conceptualisation</p>
-                <p class="part selected">Problem analysis</p>
-                <p class="part">Trends & Developments</p>
-                <p class="part">Customer insights</p>
-            </div>
-        </div>
-
-        <div class="card" id="card3">
-            <h3>Package 3</h3>
-            <p>
-                We dive deeper into all topics, adding trends and development analysis to gain a better understanding
-                of the future context factors. Ideation will be focussed on finding solutions that connect to the
-                future and ideas will be developed into concepts that can be tested.
-            </p>
-            <p class="days"><span style="font-weight: bold; color: black">6 case days</span> 3 in Delft, 3 in Japan</p>
-            <div class="set">
-                <p class="part selected">Ideation</p>
-                <p class="part selected">Conceptualisation</p>
-                <p class="part selected">Problem analysis</p>
-                <p class="part selected">Trends & Developments</p>
-                <p class="part">Customer insights</p>
-            </div>
-        </div>
-
-        <div class="card" id="card4">
-            <h3>Package 4</h3>
-            <p>
-                We engage and involve users of your products and services. By doing qualitative research with
-                customers, we get insights of their needs and desires and use them to generate ideas that turn into
-                robust concepts that your company can easily implement or take over for final development.
-            </p>
-            <p class="days"><span style="font-weight: bold; color: black">8 case days</span> 4 in Delft, 4 in Japan</p>
-            <div class="set">
-                <p class="part selected">Ideation</p>
-                <p class="part selected">Conceptualisation</p>
-                <p class="part selected">Problem analysis</p>
-                <p class="part selected">Trends & Developments</p>
-                <p class="part selected">Customer insights</p>
-            </div>
-        </div>
-    </section>
-
-    <div id="seperator"></div>
-    <section id="sounds-interesting">
-        <h2>Sounds interesting?</h2>
-        <h3>We would love to discuss possibilities with you!</h3>
-        <a href="contact.html">Contact us</a>
-    </section>
-
-<!--Bottom Footer-->
-    <footer>
-        <div id="footer-logo">
-            <img src="assets/White-globe.webp" alt="Globe" id="globe">
-            <img src="assets/TU+DELFT.webp" alt="TUD Logo" id="tu-delft-logo">
-        </div>
-        <p id="footer-title">Flight Case 2025</p>
-        <p id="address">
-            Landbergstraat 15<br>
-            Delft, 2628 CE<br>
-            The Netherlands
-        </p>
-        <a href="mailto:flightcase-svid@tudelft.nl" id="footer-link">flightcase-svid@tudelft.nl</a>
-        <a href="https://www.instagram.com/flightcase.ide/" target="_blank" id="instagram-link">
-            <img src="assets/instragram-icon.svg" alt="Instagram" id="instagram-logo-img">
+<!--    Bottom Footer-->
+<footer>
+    <div id="footer-logos">
+        <img src="assets/ID-logo.png" alt="ID Logo" id="ID">
+        <img src="assets/TUD-logo.webp" alt="TUD Logo" id="TUD">
+    </div>
+    <div id="links">
+        <a href="mailto:flightcase-svid@tudelft.nl">
+            <img src="assets/icons/email.svg" alt="Email">
+            <h3 id="email">flightcase-svid@tudelft.nl</h3>
         </a>
-    </footer>
+        <a href="https://www.instagram.com/flightcase.ide/">
+            <img src="assets/icons/instagram.svg" alt="Instagram">
+            <h3>flightcase.ide</h3>
+        </a>
+    </div>
+</footer>
 </body>
 </html>

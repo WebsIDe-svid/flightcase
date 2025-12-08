@@ -1,0 +1,50 @@
+#under-construction {
+    display: grid;
+    @media (orientation: landscape) {
+        grid-template-areas:
+        "image title"
+        "image notification"
+        "image instagram";
+        grid-template-columns: min-content auto;
+        column-gap: 5%;
+    }
+    @media (orientation: portrait) {
+        grid-template-areas:
+            "image"
+            "title"
+            "notification"
+            "instagram";
+    }
+
+    box-sizing: border-box;
+    padding: 10% 20% 10% 20%;
+    @media (pointer: coarse) and (orientation: landscape) {
+        padding: 10% 5% 10% 5%;
+    }
+}
+
+#under-construction img {
+    grid-area: image;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    @media (orientation: landscape) {
+        height: 100%;
+    }
+    @media (orientation: portrait) {
+        max-width: 100%;
+    }
+}
+
+#under-construction h2 {
+    grid-area: title;
+    color: var(--red);
+}
+
+#under-construction p {
+    grid-area: notification;
+}
+
+#under-construction a {
+    grid-area: instagram;
+    color: var(--red);
+}
