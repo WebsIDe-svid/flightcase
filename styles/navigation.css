@@ -1,5 +1,5 @@
 nav {
-    --nav-height: 80px;
+    --nav-height: 4em;
 
     @media (orientation: portrait) {
         --nav-height: 8.5vh;
@@ -65,7 +65,7 @@ nav a {
 
 nav .current-page {
     letter-spacing: 2px;
-    padding-right: -0.01em;
+    padding-right: -0.01 em;
     border-bottom: 3px solid var(--white);
 }
 
@@ -76,14 +76,14 @@ nav .contact-button {
     font-size: 18px;
 
     border-radius: 2em;
-    padding: .5em 1.5em .5em 1.5em;
+    padding: .3em 1.5em .5em 1.5em;
     letter-spacing: 0.15em;
 }
 
 nav #desktop-logo-link {
     height: 100%;
     margin: 0 auto 0 0;
-    padding-top: 0.25em;
+    padding-bottom: 0.25em;
 
     align-content: center;
 }

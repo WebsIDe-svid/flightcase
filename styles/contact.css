@@ -12,8 +12,9 @@
     flex-direction: column;
 
     @media (orientation: landscape) {
-        width: 70%;
+        width: 50%;
     }
+
     @media (orientation: portrait) {
         width: 100%;
     }
@@ -36,4 +37,5 @@
     text-decoration: underline;
     color: var(--red);
     letter-spacing: 1px;
+    font-weight: 900;
 }
