@@ -1,8 +1,10 @@
 nav {
-    --nav-height: 80px;
+    --nav-height: 4em;
+
     @media (orientation: portrait) {
         --nav-height: 8.5vh;
     }
+
     @media (pointer: coarse) and (orientation: landscape) {
         --nav-height: 20vh;
     }
@@ -32,14 +34,17 @@ nav {
     #desktop-navigation {
         display: flex;
     }
+
     #mobile-navigation {
         display: none;
     }
 }
+
 @media (pointer: coarse) {
     #desktop-navigation {
         display: none;
     }
+
     #mobile-navigation {
         display: flex;
     }
@@ -60,7 +65,8 @@ nav a {
 
 nav .current-page {
     letter-spacing: 2px;
-    text-decoration-line: underline;
+    padding-right: -0.01 em;
+    border-bottom: 3px solid var(--white);
 }
 
 nav .contact-button {
@@ -68,13 +74,15 @@ nav .contact-button {
     font-weight: bold;
     text-decoration-line: none;
 
-    border-radius: 5vh;
-    padding: .5em 1em .5em 1em;
+    border-radius: 2em;
+    padding: .3em 1.5em .5em 1.5em;
+    letter-spacing: 0.15em;
 }
 
 nav #desktop-logo-link {
     height: 100%;
     margin: 0 auto 0 0;
+    padding-bottom: 0.25em;
 
     align-content: center;
 }
@@ -93,6 +101,7 @@ nav #burger-menu {
 
     box-sizing: border-box;
     padding: 4%;
+
     @media (orientation: landscape) {
         padding: 1%;
     }

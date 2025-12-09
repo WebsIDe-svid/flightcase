@@ -33,8 +33,9 @@ body {
         --title: 96px;
         --main-header: 48px;
         --sub-header: 32px;
-        --body-text: 20px;
+        --body-text: 18px;
     }
+
     @media (orientation: portrait) {
         --title: 124px;
         --main-header: 72px;
@@ -45,7 +46,8 @@ body {
     /* Other */
     background-color: var(--white);
 
-    font-family: Jost, sans-serif;
+    font-family: Jost,
+    sans-serif;
     font-weight: normal;
     color: var(--black);
 
