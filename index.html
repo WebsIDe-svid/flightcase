@@ -16,14 +16,14 @@
 <body>
 <!--Top Navigation-->
 <nav class="landingpage-nav" id="desktop-navigation">
-    <a href="index.html" id="desktop-logo-link">
+    <a id="desktop-logo-link">
         <img src="assets/logo-red.svg" alt="Flight Case 2026" class="flightcase-logo-img">
     </a>
 
-    <a href="contact.html" class="contact-button">Contact us</a>
+    <a href="/contact" class="contact-button">Contact us</a>
 </nav>
 <nav class="landingpage-nav" id="mobile-navigation">
-    <a href="index.html" id="mobile-logo-link">
+    <a id="mobile-logo-link">
         <img src="assets/logo-red.svg" alt="Flight Case 2026" class="flightcase-logo-img">
     </a>
 
@@ -31,20 +31,21 @@
          onclick="toggleMenu()">
 
     <div id="mobile-menu">
-        <a class="current-page" href="index.html">Overview</a>
-        <a href="companies.html">For companies</a>
-        <a href="students.html">For students</a>
-        <a href="about-us.html">About us</a>
-        <a href="contact.html" class="contact-button">Contact us</a>
+        <a class="current-page">Overview</a>
+        <a href="/companies">For companies</a>
+        <a href="/students">For students</a>
+        <a href="/about-us">About us</a>
+        <a href="/contact" class="contact-button">Contact us</a>
     </div>
 </nav>
 
 <section id="banner">
+    <div class="banner-bg"></div>
     <h2>FLIGHTCASE 2026</h2>
     <h1>A collaboration to bring Delft Design abroad</h1>
     <div id="buttons">
-        <a href="companies.html">Companies ➜</a>
-        <a href="students.html" id="students-button">Students ➜</a>
+        <a href="/companies">Companies <img src="assets/icons/arrow-right-alt.svg"></a>
+        <a href="/students" id="students-button">Students <img src="assets/icons/arrow-right-alt-blue.svg" id="students-button-icon"></a>
     </div>
 </section>
 
@@ -72,7 +73,7 @@
             <img src="assets/icons/email.svg" alt="Email">
             <h3 id="email">flightcase-svid@tudelft.nl</h3>
         </a>
-        <a href="https://www.instagram.com/flightcase.ide/">
+        <a href="https://www.instagram.com/flightcase.ide/" id="insta-line">
             <img src="assets/icons/instagram.svg" alt="Instagram">
             <h3>flightcase.ide</h3>
         </a>
