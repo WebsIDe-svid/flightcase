@@ -79,6 +79,10 @@
     color: var(--blue);
 }
 
+#banner img {
+    height: calc(var(--body-text) * 1.25);
+}
+
 @keyframes rotate-partners {
     0% {
         background-position: 0 0
