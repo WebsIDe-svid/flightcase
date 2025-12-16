@@ -208,3 +208,15 @@
 #students-faq #faq-container {
     grid-column: 2;
 }
+
+#slides embed {
+    display: block;
+    width: 80vw;
+    height: 80vh;
+    margin: 0 auto;
+    padding: 16px;
+    border: 3px solid var(--red);
+    border-radius: 15px;
+    margin-bottom: 80px;
+    margin-top: 80px;
+}
