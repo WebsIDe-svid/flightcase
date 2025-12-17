@@ -1,68 +1,218 @@
 #opening-section {
 
 }
-
-#opening-section #photo-banner {
+#banner {
+    position: relative;
     width: 100%;
-    height: 30vh;
 
-    object-fit: cover;
-}
-
-#opening-section #introduction {
     display: grid;
     grid-template-areas:
-        "title image"
-        "text image"
-        "contact image";
+        "title"
+        "buttons";
 
-    grid-template-columns: auto min-content;
-    grid-template-rows: min-content auto min-content;
     box-sizing: border-box;
-    padding: 5% 10% 5% 10%;
+    padding: 5vw;
+
+    color: var(--white);
+    background-color: transparent;
 }
 
-#opening-section #introduction h2 {
+#banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+            linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)),
+            url("../assets/banners/companies-banner.png");
+    background-size: cover;
+    background-position: center;
+    filter: blur(0.08em);
+    z-index: -1;
+}
+
+#banner h2 {
+    grid-area: header;
+    margin-top: 1.25em;
+    margin-bottom: .5em;
+}
+
+#banner h1 {
     grid-area: title;
+    width: 75%;
+    margin-top: 1.25em;
+    line-height: 1.1;
+    margin-bottom: 0.5em;
 }
 
-#opening-section #introduction p {
-    grid-area: text;
-    font-size: 20px;
-    line-height: 1.5;
-    letter-spacing: 1px;
+#banner #buttons {
+    grid-area: buttons;
+    margin-bottom: 9em;
+
+    display: flex;
+    flex-direction: row;
+    column-gap: 3%;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
-#opening-section #introduction a {
-    grid-area: contact;
+#banner #buttons a {
     background-color: var(--blue);
     color: var(--white);
+    border-color: var(--blue);
     border-radius: 100px;
-    font-weight: 500;
-    padding: .8em 1.6em .8em 1.6em;
-    text-decoration: none;
-    font-size: 18px;
-    width: fit-content;
-    height: fit-content;
-    align-content: center;
-    justify-items: center;
-    letter-spacing: 2px;
+    box-sizing: border-box;
+    padding: .5em 2em .5em 2.5em;
+    border-style: solid;
+    border-width: 3px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
 }
 
-#opening-section #introduction img {
-    grid-area: image;
-    max-height: 40vh;
-    align-self: center;
-    justify-self: end;
+#banner #buttons #students-button {
+    background-color: var(--white);
+    border-color: var(--blue);
+    color: var(--blue);
+}
+
+@keyframes rotate-partners {
+    0% {
+        background-position: 0 0
+    }
+
+    100% {
+        background-position: -2000px 0
+    }
+}
+
+#partners {
+    position: relative;
+
+    width: 100%;
+    height: 8em;
+
+    background-image: url("../assets/companies.svg");
+    background-size: 2000px 100%;
+    background-repeat: repeat-x;
+
+    animation: rotate-partners 60s linear infinite;
+    margin-top: 1em;
+}
+
+#partners h3 {
+    position: absolute;
+    font-size: 18px;
+    font-weight: normal;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @media (pointer: coarse) and (orientation: landscape) {
+        margin-top: -0.8em;
+    }
+}
+
+#process {
+    background-color: var(--white);
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "card1 card2"
+        "card3 card4"
+        "card5 blanc";
+
+    box-sizing: border-box;
+    padding: 3% 10% 5% 10%;
+
+    row-gap: 1em;
+    column-gap: 1.5em;
+
+    @media (orientation: portrait) {
+        grid-template-areas:
+            "header"
+            "card1"
+            "card2"
+            "card3"
+            "card4"
+            "card5";
+    }
+}
+
+#process h1 {
+    font-weight: 500;
+    text-align: left;
+    grid-area: header;
+}
+
+#process .card {
+    background-color: var(--white);
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 2px;
+    color: var(--red);
+    border-color: var(--red);
+    box-sizing: border-box;
+    padding: 5%;
+    margin-bottom: 2.5%;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+
+    align-items: start;
+}
+
+#process .card img {
+    width: 100%;
+    height: 22.5em;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+#process .card h3 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#process .card p {
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: var(--black);
+}
+
+#process #process-card1 {
+    grid-area: card1;
+}
+
+#process #process-card2 {
+    grid-area: card2;
+}
+
+#process #process-card3 {
+    grid-area: card3;
+}
+
+#process #process-card4 {
+    grid-area: card4;
+}
+
+#process #process-card5 {
+    grid-area: card5;
 }
 
 .companies-quote {
-    background-color: var(--blue);
+    background-color: var(--red);
     color: white;
     letter-spacing: 2px;
 
     box-sizing: border-box;
-    padding: 5% 10% 5% 10%;
+    padding: 3% 10% 3% 10%;
 }
 
 .companies-quote .quote-text {
@@ -75,387 +225,145 @@
     font-size: 20px;
 }
 
-#process {
-    background-color: var(--white);
-    display: flex;
-    flex-direction: column;
-
+#packages {
     box-sizing: border-box;
-    padding: 5% 10% 5% 10%;
+    padding: 0% 10% 5% 10%;
 
     row-gap: 1em;
-}
-
-#process h2 {
-    font-weight: 500;
-    text-align: center;
-}
-
-#process .card {
+    column-gap: 1.5em;
     background-color: var(--white);
-    border-radius: 15px;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
-    padding: 3%;
 
     display: grid;
-    grid-template-areas:
-        "image title"
-        "image text";
 
-    grid-template-columns: 40% auto;
-    grid-template-rows: 15% auto;
-    column-gap: 5%;
+    @media (orientation: landscape) {
+        grid-template-areas:
+            "title title"
+            "card1 card2"
+            "card3 card4"
+            "note note";
+    }
+
+    @media (orientation: portrait) {
+        grid-template-areas:
+            "title"
+            "card1"
+            "card2"
+            "card3"
+            "card4"
+            "note";
+    }
+
+
 }
 
-#process .card img {
-    grid-area: image;
-    max-width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 5px;
-}
-
-#process .card h3 {
+#packages h1 {
     grid-area: title;
-    font-size: 30px;
-    font-weight: 500;
-}
-
-#process .card p {
-    grid-area: text;
-    font-size: 20px;
-    letter-spacing: 1px;
-}
-
-#packages {
-    background-color: var(--white);
-    box-sizing: border-box;
-    padding: 5% 10% 5% 10%;
-
-    display: grid;
-    grid-template-areas:
-        "title title"
-        "card1 card2"
-        "card3 card4";
-
-    column-gap: 1%;
-    row-gap: 2%;
-}
-
-#packages h2 {
-    grid-area: title;
+    margin-top: 0.5em;
+    margin-bottom: 0em;
 }
 
 #packages .card {
     background-color: var(--white);
     border-radius: 15px;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    border-style: solid;
+    border-width: 2px;
+    color: var(--red);
+    border-color: var(--red);
     box-sizing: border-box;
     padding: 5%;
+    margin-bottom: 2.5%;
 
     display: flex;
     flex-direction: column;
     row-gap: 1em;
+
+    align-items: start;
 }
 
 #packages .card h3 {
-    font-weight: 500;
-    font-size: 25px;
     letter-spacing: 2px;
 }
 
 #packages .card p {
-    font-size: 18px;
     letter-spacing: 1px;
+    font-size: 20px;
+    color: var(--black);
+}
+
+#packages .card .location {
+    font-weight: 300;
 }
 
 #packages .card .days {
-    color: var(--black);
-    letter-spacing: 2px;
+    font-weight: bold;
 }
 
-#packages .card .set {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-    column-gap: .5em;
-    row-gap: .5em;
+#packages .card img {
+    width: 15%;
+    aspect-ratio: 1 / 1;
 }
 
-#packages .card .set .part {
-    background-color: var(--white);
-    color: var(--blue);
-    border-style: solid;
-    border-width: 2px;
-    border-color: var(--blue);
-    border-radius: 100px;
-    padding: .25em .5em .25em .5em;
-    opacity: 0.2;
-}
-
-#packages .card .set .part.selected {
-    background-color: var(--blue);
-    color: var(--white);
-    opacity: 1;
-}
-
-#packages #card1 {
+#packages #packages-card1 {
     grid-area: card1;
 }
 
-#packages #card2 {
+#packages #packages-card2 {
     grid-area: card2;
 }
 
-#packages #card3 {
+#packages #packages-card3 {
     grid-area: card3;
 }
 
-#packages #card4 {
+#packages #packages-card4 {
     grid-area: card4;
-}
-
-#seperator {
-    width: 100%;
-    height: 5px;
-    background-color: var(--red);
 }
 
 #sounds-interesting {
     background-color: var(--white);
     box-sizing: border-box;
-    padding: 2.5%;
+    padding: 0% 10% 5% 10%;
 
     display: flex;
     flex-direction: column;
-    row-gap: 1.8em;
 
-    align-items: center;
 }
 
-#sounds-interesting h2 {
-    letter-spacing: 3px;
+#sounds-interesting h1 {
+    margin-top: 2.5%;
 }
 
 #sounds-interesting h3 {
     font-size: 30px;
     font-weight: normal;
-    padding-bottom: 1em;
+    padding-bottom: 1.5em;
+}
+
+#sounds-interesting #buttons {
+    grid-area: buttons;
+    margin-bottom: 9em;
+
+    display: flex;
+    flex-direction: row;
+    column-gap: 3%;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 #sounds-interesting a {
     background-color: var(--blue);
     color: var(--white);
-
-    text-decoration: none;
-
+    border-color: var(--blue);
     border-radius: 100px;
-    padding: .8em 1.6em .8em 1.6em;
-    font-weight: 500;
-    letter-spacing: 2px;
-    font-size: 18px;
-}
-
-@media (orientation: portrait) {
-    #opening-section {
-
-    }
-
-    #opening-section #photo-banner {
-        width: 100%;
-        height: 20vh;
-    }
-
-    #opening-section #introduction {
-        display: grid;
-        grid-template-areas:
-        "title image"
-        "text text"
-        "contact contact";
-    }
-
-    #opening-section #introduction h2 {
-        grid-area: title;
-        font-size: 40px;
-        line-height: 1.4em;
-    }
-
-    #opening-section #introduction p {
-        grid-area: text;
-        font-size: 20px;
-    }
-
-    #opening-section #introduction a {
-        grid-area: contact;
-        padding: .8em 1.6em .8em 1.6em;
-        font-size: 20px;
-        margin-top: 25px;
-        letter-spacing: 2px;
-    }
-
-    #opening-section #introduction img {
-        grid-area: image;
-        max-height: 15vh;
-        align-self: left;
-        justify-self: left;
-        margin-right: 10vh;
-    }
-
-    .companies-quote {
-    }
-
-    .companies-quote .quote-text {
-        font-size: 24px;
-    }
-
-    .companies-quote .quote-author {
-        font-size: 14px;
-    }
-
-    #process {
-        display: flex;
-        flex-direction: column;
-
-        box-sizing: border-box;
-        padding: 5% 10% 5% 10%;
-
-        row-gap: 1.75em;
-    }
-
-    #process h2 {
-        font-size: 40px;
-        text-align: left;
-    }
-
-    #process .card {
-        padding: 5%;
-
-        display: grid;
-        grid-template-areas:
-        "image image"
-        "title title"
-        "text text";
-
-        grid-template-rows: 35%;
-        column-gap: 5%;
-    }
-
-    #process .card img {
-        grid-area: image;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    #process .card h3 {
-        grid-area: title;
-        font-size: 30px;
-    }
-
-    #process .card p {
-        grid-area: text;
-        font-size: 20px;
-    }
-
-    #packages {
-        display: grid;
-        grid-template-areas:
-        "title title"
-        "card1 card1"
-        "card2 card2"
-        "card3 card3"
-        "card4 card4";
-
-        column-gap: 1%;
-        row-gap: 1%;
-        padding-bottom: 15%;
-    }
-
-    #packages h2 {
-        grid-area: title;
-        font-size: 40px;
-    }
-
-    #packages .card {
-        box-sizing: border-box;
-        padding: 5%;
-
-        display: flex;
-        flex-direction: column;
-        row-gap: 1em;
-        margin: 0% 0% 2.5% 0%;
-    }
-
-    #packages .card h3 {
-        font-weight: 500;
-        font-size: 30px;
-        letter-spacing: 2px;
-    }
-
-    #packages .card p {
-        font-size: 18px;
-        letter-spacing: 1px;
-    }
-
-    #packages .card .days {
-    }
-
-    #packages .card .set {
-
-    }
-
-    #packages .card .set .part {
-        font-size: 16px;
-    }
-
-    #packages .card .set .part.selected {
-    }
-
-    #packages #card1 {
-        grid-area: card1;
-    }
-
-    #packages #card2 {
-        grid-area: card2;
-    }
-
-    #packages #card3 {
-        grid-area: card3;
-    }
-
-    #packages #card4 {
-        grid-area: card4;
-    }
-
-    #seperator {
-    }
-
-    #sounds-interesting {
-        box-sizing: border-box;
-        padding: 2.5%;
-        display: flex;
-        flex-direction: column;
-        row-gap: 1.8em;
-
-        align-items: center;
-    }
-
-    #sounds-interesting h2 {
-        letter-spacing: 3px;
-        font-size: 40px;
-    }
-
-    #sounds-interesting h3 {
-        font-size: 25px;
-        font-weight: normal;
-        padding-bottom: 0.5em;
-        text-align: center;
-    }
-
-    #sounds-interesting a {
-        font-size: 20px;
-        margin-bottom: 2.5%;
-    }
+    box-sizing: border-box;
+    padding: .5em 2em .5em 2.5em;
+    border-style: solid;
+    border-width: 3px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
 }
