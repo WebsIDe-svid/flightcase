@@ -5,12 +5,6 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
-    @media (orientation: portrait) {
-        flex-direction: column-reverse;
-        justify-content: flex-start;
-    }
-
     background-color: var(--blue);
 
     box-sizing: border-box;
@@ -22,6 +16,12 @@ footer {
 
     background-clip: border-box;
     margin-top: auto;
+
+    @media (orientation: portrait) {
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        padding-top: 2.5em;
+    }
 }
 
 footer #footer-logos {
@@ -46,7 +46,7 @@ footer #footer-logos #ID {
 }
 
 footer #footer-logos #TUD {
-    width: calc(50% - 1em);
+    width: calc(50% - 4em);
 }
 
 footer #links {
@@ -91,10 +91,10 @@ footer #insta-line {
 }
 
 footer #links a h3 {
-    font-size: 1.5em;
+    font-size: 1.25em;
 
     @media (orientation: portrait) {
-        font-size: 5vw;
+        font-size: 4vw;
     }
 }
 
